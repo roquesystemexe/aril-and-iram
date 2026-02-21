@@ -1,2 +1,2 @@
-# liraxroque
-The game we're making
+# Aril & Iram
+The game developed by Roque System and Lira
