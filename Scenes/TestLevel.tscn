@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b4g7nchhrlk0b"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5ms4e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_shgkq"]
+size = Vector2(270, 20)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_bhm8u"]
+
+[node name="TestLevel" type="Node2D" unique_id=893113129]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1852134523]
+physics_material_override = SubResource("PhysicsMaterial_5ms4e")
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1265287845]
+position = Vector2(51, 38)
+shape = SubResource("RectangleShape2D_shgkq")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1755059560]
+position = Vector2(-83, 28.000004)
+scale = Vector2(269.75, 27.5)
+texture = SubResource("PlaceholderTexture2D_bhm8u")

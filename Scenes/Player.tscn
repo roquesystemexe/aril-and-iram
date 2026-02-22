@@ -1,15 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://3pfgujl6juvm"]
+[gd_scene format=3 uid="uid://3pfgujl6juvm"]
 
-[ext_resource type="Script" path="res://Scenes/player_movement.gd" id="1_ghtyb"]
+[ext_resource type="Script" uid="uid://cflwjsunhopka" path="res://Scripts/player_movement.gd" id="1_ghtyb"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rpqav"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_f3588"]
 
-[node name="player" type="Node2D"]
+[node name="player" type="CharacterBody2D" unique_id=705346385]
 script = ExtResource("1_ghtyb")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=994632060]
+position = Vector2(-8.999999, -13)
+scale = Vector2(18, 25.999996)
+texture = SubResource("PlaceholderTexture2D_rpqav")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1884646955]
 shape = SubResource("CapsuleShape2D_f3588")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
