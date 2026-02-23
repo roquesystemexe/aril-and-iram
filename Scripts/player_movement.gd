@@ -1,22 +1,27 @@
 extends CharacterBody2D
 
-@export var gravity = 10;
-@export var speed = 100;
-var is_falling: bool = false;
+@export var gravity: float = 10.0;
+@export var speed: float = 200.0;
+@export var jump_force: float = 2.7;
+@export var dash_force: float = 1.0;
 
-
-func _move(body: CharacterBody2D, direction: float) -> void:
-	body.velocity.x = direction * speed;
-	
-func handle_gravity(body: CharacterBody2D, delta: float) -> void:
-	if not body.is_on_floor():
-		body.velocity.y += gravity * delta;
-	is_falling = body.velocity.y > 0 and not body.is_on_floor();
+var input_handler := InputHandler.new();
 
 func _physics_process(delta: float) -> void:
-	handle_gravity(self, delta);
+	var input := input_handler.get_move();
 
+	# Horizontal
+	velocity.x = input.x * speed;
 
-func _process(delta: float) -> void:
-	
-	pass
+	# Gravity
+	if not is_on_floor():
+		velocity.y += gravity * delta * 300;
+	else:
+		# Allow a visible jump
+		if input_handler.get_jump():
+			velocity.y -= jump_force * 300;
+		else:
+			velocity.y = 0.0;
+
+	move_and_slide();
+#

@@ -1,7 +1,29 @@
-extends Node
+#extends Node
+#class_name InputHandler
+#
+#func get_move() -> Vector2:
+	#var dir := Vector2.ZERO
+	#if Input.is_action_pressed("move_right"):
+		#dir.x += 1;
+	#if Input.is_action_pressed("move_left"):
+		#dir.x -= 1;
+	#if Input.is_action_just_pressed("jump"):
+		#dir.y -= 1;
+	#return dir.normalized()
 
-var h_input: float = 0.0
-func _process(delta: float) -> void:
-	h_input = Input.get_axis("move_left", "move_right");
-func _getJump() -> bool:
-	return Input.is_action_just_pressed("jump")
+extends Node
+class_name InputHandler
+
+func get_move() -> Vector2:
+	var dir := Vector2.ZERO
+	if Input.is_action_pressed("move_right"):
+		dir.x += 1
+	if Input.is_action_pressed("move_left"):
+		dir.x -= 1
+	return dir.normalized();
+	
+func get_jump() -> bool:
+	if Input.is_action_just_pressed("jump"):
+		return true;
+	else:
+		return false;
