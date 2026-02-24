@@ -27,3 +27,8 @@ func get_jump() -> bool:
 		return true;
 	else:
 		return false;
+func get_dash() -> bool:
+	if Input.is_action_just_pressed("dash"):
+		return true;
+	else:
+		return false;

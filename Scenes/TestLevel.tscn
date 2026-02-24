@@ -11,20 +11,52 @@ size = Vector2(270, 20)
 
 [node name="TestLevel" type="Node2D" unique_id=893113129]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1852134523]
+[node name="Platform" type="RigidBody2D" parent="." unique_id=1852134523]
 position = Vector2(6, 23)
 physics_material_override = SubResource("PhysicsMaterial_5ms4e")
 gravity_scale = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1265287845]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=1265287845]
 position = Vector2(51, 38)
 scale = Vector2(1.1605932, 1)
 shape = SubResource("RectangleShape2D_shgkq")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1049611561]
+[node name="Sprite2D" type="Sprite2D" parent="Platform" unique_id=1049611561]
 position = Vector2(-106, 28)
 scale = Vector2(313, 20)
 texture = SubResource("PlaceholderTexture2D_bhm8u")
 centered = false
 
 [node name="player" parent="." unique_id=705346385 instance=ExtResource("1_bhm8u")]
+
+[node name="Platform2" type="RigidBody2D" parent="." unique_id=168209642]
+position = Vector2(320, 11)
+physics_material_override = SubResource("PhysicsMaterial_5ms4e")
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1697202884]
+position = Vector2(51, 38)
+scale = Vector2(1.1605932, 1)
+shape = SubResource("RectangleShape2D_shgkq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform2" unique_id=1501939420]
+position = Vector2(-106, 28)
+scale = Vector2(313, 20)
+texture = SubResource("PlaceholderTexture2D_bhm8u")
+centered = false
+
+[node name="Platform3" type="RigidBody2D" parent="." unique_id=2018242313]
+position = Vector2(626, -9)
+physics_material_override = SubResource("PhysicsMaterial_5ms4e")
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=1041128866]
+position = Vector2(51, 38)
+scale = Vector2(1.1605932, 1)
+shape = SubResource("RectangleShape2D_shgkq")
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform3" unique_id=987640333]
+position = Vector2(-106, 28)
+scale = Vector2(313, 20)
+texture = SubResource("PlaceholderTexture2D_bhm8u")
+centered = false
