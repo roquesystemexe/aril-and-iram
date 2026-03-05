@@ -1,18 +1,16 @@
-#extends Node
-#class_name InputHandler
-#
-#func get_move() -> Vector2:
-	#var dir := Vector2.ZERO
-	#if Input.is_action_pressed("move_right"):
-		#dir.x += 1;
-	#if Input.is_action_pressed("move_left"):
-		#dir.x -= 1;
-	#if Input.is_action_just_pressed("jump"):
-		#dir.y -= 1;
-	#return dir.normalized()
-
 extends Node
 class_name InputHandler
+
+func _restart() -> bool:
+	if Input.is_action_just_pressed("restart"):
+		return true;
+	else:
+		return false;
+
+func _quit() -> bool:
+	if Input.is_action_just_pressed("quit"):
+		return true;
+	return false;
 
 func get_move() -> Vector2:
 	var dir := Vector2.ZERO

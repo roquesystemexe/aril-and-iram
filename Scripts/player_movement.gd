@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name PlayerMovement
 
 @export var gravity: float = 10.0;
-@export var speed: float = 100.0;
+@export var speed: float = 125.0;
 @export var jump_force: float = 135.0;
 @export var dash_force: float = 300.0;
 @export var dash_cooldown: int = 65;
