@@ -20,8 +20,10 @@ func _physics_process(delta: float) -> void:
 	
 	var input := input_handler.get_move();
 	
-	#==================================================== Horizontal Movement
+	#==================================================== Gravity
 	velocity.x = input.x * speed;
+	
+	#==================================================== Horizontal Movement
 	
 	if (dCooldown > 0):
 		dCooldown -= 1;
