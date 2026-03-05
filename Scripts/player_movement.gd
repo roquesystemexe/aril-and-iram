@@ -6,11 +6,13 @@ class_name PlayerMovement
 @export var jump_force: float = 135.0;
 @export var dash_force: float = 300.0;
 @export var dash_cooldown: int = 65;
+@export var double_jump: bool = true;
 var dCooldown = 0;
 var input_handler := InputHandler.new();
 var direction = 1;
 
 func _physics_process(delta: float) -> void:
+	velocity.y += gravity * delta * 100;
 	if velocity.x > 0:
 		direction = 1;
 	elif velocity.x < 0:
@@ -25,7 +27,7 @@ func _physics_process(delta: float) -> void:
 		dCooldown -= 1;
 	
 	#==================================================== Dashing
-	if (input_handler.get_dash() && dCooldown == 0):
+	if (input_handler.get_dash() and dCooldown == 0):
 		if velocity.x < 0:
 			velocity.x = dash_force * delta * -500;
 			dCooldown = dash_cooldown;
@@ -33,14 +35,16 @@ func _physics_process(delta: float) -> void:
 			velocity.x = dash_force * delta * 500;
 			dCooldown = dash_cooldown;
 	
-	#==================================================== Gravity & Jumping
-	if not is_on_floor():
-		velocity.y += gravity * delta * 100;
-	else:
+	#==================================================== Jumping
+	if is_on_floor():
+		double_jump = true;
 		if input_handler.get_jump():
 			velocity.y -= jump_force * delta * 100;
-		else:
-			velocity.y = 0.0;
+	elif double_jump:
+		if input_handler.get_jump():
+			velocity.y -= jump_force * delta * 100;
+			double_jump = false;
+
 
 	move_and_slide();
 #
