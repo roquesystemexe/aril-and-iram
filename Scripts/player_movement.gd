@@ -12,7 +12,6 @@ var input_handler := InputHandler.new();
 var direction = 1;
 
 func _physics_process(delta: float) -> void:
-	velocity.y += gravity * delta * 100;
 	if velocity.x > 0:
 		direction = 1;
 	elif velocity.x < 0:
@@ -21,21 +20,18 @@ func _physics_process(delta: float) -> void:
 	var input := input_handler.get_move();
 	
 	#==================================================== Gravity
-	velocity.x = input.x * speed;
+	velocity.y += gravity * delta * 100;
 	
 	#==================================================== Horizontal Movement
+	velocity.x = input.x * speed;
 	
+	#==================================================== Dashing
 	if (dCooldown > 0):
 		dCooldown -= 1;
 	
-	#==================================================== Dashing
 	if (input_handler.get_dash() and dCooldown == 0):
-		if velocity.x < 0:
-			velocity.x = dash_force * delta * -500;
-			dCooldown = dash_cooldown;
-		else:
-			velocity.x = dash_force * delta * 500;
-			dCooldown = dash_cooldown;
+		velocity.x = dash_force * delta * 500 * direction;
+		dCooldown = dash_cooldown;
 	
 	#==================================================== Jumping
 	if is_on_floor():
