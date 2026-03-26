@@ -1,9 +1,10 @@
 extends Node2D
+class_name PlayerAnimator
 @export var player_movement : PlayerMovement
 @export var animation_player : AnimationPlayer
 @export var sprite : Sprite2D
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	# ======================================================= Flipping the character Horizontally
 	if player_movement.direction == 1:
 		sprite.flip_h = false;

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://3pfgujl6juvm"]
 
 [ext_resource type="Script" uid="uid://cflwjsunhopka" path="res://Scripts/player_movement.gd" id="1_ghtyb"]
-[ext_resource type="Script" uid="uid://by8m8uanixh4w" path="res://Scenes/player_animator.gd" id="2_gntrk"]
+[ext_resource type="Script" uid="uid://by8m8uanixh4w" path="res://Scripts/player_animator.gd" id="2_gntrk"]
 [ext_resource type="Texture2D" uid="uid://mrtptn76g246" path="res://Sprites/player.png" id="2_kyqiw"]
 
 [sub_resource type="Animation" id="Animation_kyqiw"]
@@ -55,6 +55,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_5ixxa"]
 resource_name = "jump"
+loop_mode = 1
 step = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -71,6 +72,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_nn08x"]
 resource_name = "move"
+loop_mode = 1
 step = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -122,6 +124,5 @@ region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=896441421]
-visible = false
 position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_kyqiw")
