@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cejgn1cntvwq5"]
+
+[ext_resource type="Texture2D" uid="uid://dn3fjgixodu5k" path="res://Assets/kill_box.jpg" id="1_okvdv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2kv8m"]
+size = Vector2(21, 20)
+
+[node name="KillBox" type="Node2D" unique_id=1028609880]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1969398703]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=725962100]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_2kv8m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1470289044]
+position = Vector2(0.5000004, -4.7683716e-07)
+scale = Vector2(1.3125001, 1.25)
+texture = ExtResource("1_okvdv")
