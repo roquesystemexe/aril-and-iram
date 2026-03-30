@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cusv36ynbuwmy"]
+
+[ext_resource type="Script" uid="uid://fwv73ivd1e70" path="res://Scenes/StaticObstacles/kill_box.gd" id="1_8ne8o"]
+[ext_resource type="Texture2D" uid="uid://dn3fjgixodu5k" path="res://Assets/kill_box.jpg" id="2_b6dcv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2t0o"]
+
+[node name="KillBox" type="Area2D" unique_id=499233768]
+script = ExtResource("1_8ne8o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008844971]
+shape = SubResource("RectangleShape2D_v2t0o")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=231268856]
+position = Vector2(4.7683716e-07, 4.7683716e-07)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_b6dcv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
