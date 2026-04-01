@@ -1,16 +1,19 @@
 extends CharacterBody2D
 class_name PlayerMovement
 
-@export var gravity: float = 10.0;
-@export var speed: float = 125.0;
-@export var jump_force: float = 135.0;
-@export var dash_force: float = 300.0;
-@export var dash_cooldown: int = 65;
-@export var double_jump: bool = true;
+@export var gravity: float = 10.0;			# Base gravity
+@export var speed: float = 125.0;			# Base speed
+@export var jump_force: float = 135.0;		# Base jump force
+@export var dash_force: float = 300.0;		# Base dash force
+@export var dash_cooldown: int = 65;		# Base cooldown for dash
+@export var double_jump: bool = false;		# Double Jump Checker
 var dCooldown = 0;
 var input_handler := InputHandler.new();
 var direction = 1;
 
+#func _process(_delta: float) -> void:
+	#print("dJump is enabled:", dJump_enabled)
+	#print("dJump is ready:", double_jump)
 func _physics_process(delta: float) -> void:
 	if velocity.x > 0:
 		direction = 1;
@@ -35,7 +38,8 @@ func _physics_process(delta: float) -> void:
 	
 	#==================================================== Jumping
 	if is_on_floor():
-		double_jump = true;
+		if GameManager.dJump_enabled == true:
+			double_jump = true;
 		if input_handler.get_jump():
 			velocity.y -= jump_force * delta * 100;
 	elif double_jump:

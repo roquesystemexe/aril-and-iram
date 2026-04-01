@@ -3,6 +3,8 @@ class_name InputHandler
 
 func _restart() -> bool:
 	if Input.is_action_just_pressed("restart"):
+		GameManager.has_checkpoint = false;
+		GameManager.dJump_enabled = false;
 		return true;
 	else:
 		return false;
