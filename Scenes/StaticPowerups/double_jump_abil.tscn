@@ -16,4 +16,18 @@ position = Vector2(-0.061781093, -2.842171e-14)
 scale = Vector2(-1.2528006, 1.25)
 texture = ExtResource("1_bg7yj")
 
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=640403403]
+visible = false
+clip_contents = false
+offset_left = -60.999996
+offset_top = -20.999998
+offset_right = 79.0
+offset_bottom = 19.000002
+scale = Vector2(0.8242372, 0.18703006)
+text = "Press E to interact"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -27,8 +27,18 @@ func get_jump() -> bool:
 		return true;
 	else:
 		return false;
+
 func get_dash() -> bool:
 	if Input.is_action_just_pressed("dash"):				# DASH INPUT
 		return true;
 	else:
+		return false;
+
+func get_interact() -> bool:
+	if Input.is_action_just_pressed("interact"):			# INTERACTION INPUT
+		GameManager.is_interacting = true;
+		#print(GameManager.is_interacting)
+		return true;
+	else:
+		GameManager.is_interacting = false;
 		return false;
