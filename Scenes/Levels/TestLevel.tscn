@@ -167,7 +167,7 @@ position = Vector2(1246, -510)
 scale = Vector2(2.3999903, 1)
 
 [node name="Checkpoint" parent="." unique_id=1838223352 instance=ExtResource("5_o0omn")]
-position = Vector2(751, -151)
+position = Vector2(751, -150)
 
 [node name="DoubleJumpAbil" parent="." unique_id=65691463 instance=ExtResource("6_dqpvo")]
 position = Vector2(215, 8)
