@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cusv36ynbuwmy" path="res://Scenes/StaticObstacles/KillBox.tscn" id="4_iuug4"]
 [ext_resource type="PackedScene" uid="uid://oqa62vus0odv" path="res://Scenes/StaticPowerups/checkpoint.tscn" id="5_o0omn"]
 [ext_resource type="PackedScene" uid="uid://davlmgltpvs6r" path="res://Scenes/StaticPowerups/double_jump_abil.tscn" id="6_dqpvo"]
-[ext_resource type="AudioStream" uid="uid://607bvk55uvl7" path="res://Music/Office.wav" id="7_gyeg4"]
 [ext_resource type="PackedScene" uid="uid://duu6ytyo0wp8r" path="res://Scenes/StaticPowerups/amogus.tscn" id="8_1mv4x"]
+[ext_resource type="AudioStream" uid="uid://bo3ooxkefux2a" path="res://Music/Office.mp3" id="8_a7u0l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0omn"]
 texture = ExtResource("2_iuug4")
@@ -228,8 +228,9 @@ position = Vector2(215, 8)
 position = Vector2(1366, -262)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1009228809]
-stream = ExtResource("7_gyeg4")
+stream = ExtResource("8_a7u0l")
 autoplay = true
+parameters/looping = true
 
 [node name="Phaseground" type="TileMapLayer" parent="." unique_id=146411061]
 tile_map_data = PackedByteArray("AAAiAP//AAABAAAAAAAjAP//AAABAAAAAAAkAP//AAABAAAAAAAlAP//AAABAAAAAAAjAAAAAAABAAEAAAAkAAAAAAABAAEAAAAlAAAAAAABAAEAAAAmAAAAAAABAAEAAAAkAAEAAAABAAEAAAAlAAEAAAABAAEAAAAmAAEAAAABAAEAAAAnAAEAAAABAAEAAAAmAAIAAAABAAEAAAAnAAIAAAABAAEAAAAnAAMAAAABAAEAAAAoAAIAAAACAAEAAAAoAAMAAAACAAEAAAA=")

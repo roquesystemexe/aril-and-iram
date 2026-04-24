@@ -9,6 +9,7 @@
 script = ExtResource("1_5x3b8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1382840814]
+visible = false
 shape = SubResource("RectangleShape2D_dh8xo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1060560686]

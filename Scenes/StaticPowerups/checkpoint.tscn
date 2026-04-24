@@ -10,6 +10,7 @@ size = Vector2(16, 16)
 script = ExtResource("1_ci5vf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=651185053]
+visible = false
 shape = SubResource("RectangleShape2D_ci5vf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=74219105]
