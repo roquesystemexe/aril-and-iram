@@ -11,9 +11,6 @@ var dCooldown = 0;
 var input_handler := InputHandler.new();
 var direction = 1;
 
-#func _process(_delta: float) -> void:
-	#print("dJump is enabled:", dJump_enabled)
-	#print("dJump is ready:", double_jump)
 func _physics_process(delta: float) -> void:
 	if velocity.x > 0:
 		direction = 1;

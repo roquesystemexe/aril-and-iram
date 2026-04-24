@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://sgffq3o0hous"
+path="res://.godot/imported/Theme Song DEMO.mp3-3a0df13244f3b8ccb58388b0d86a3619.mp3str"
+
+[deps]
+
+source_file="res://Music/Theme Song DEMO.mp3"
+dest_files=["res://.godot/imported/Theme Song DEMO.mp3-3a0df13244f3b8ccb58388b0d86a3619.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
