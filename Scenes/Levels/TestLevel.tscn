@@ -203,10 +203,13 @@ tile_map_data = PackedByteArray("AAD5/wEAAAAAAAAAAAD6/wEAAAABAAAAAAD7/wEAAAABAAA
 tile_set = SubResource("TileSet_shgkq")
 
 [node name="Amogus" parent="." unique_id=1615660308 instance=ExtResource("8_1mv4x")]
-position = Vector2(682, 58)
+position = Vector2(682, 57)
 
 [node name="player" parent="." unique_id=705346385 instance=ExtResource("3_o0omn")]
 position = Vector2(-1, 16)
+
+[node name="DoubleJumpAbil" parent="." unique_id=65691463 instance=ExtResource("6_dqpvo")]
+position = Vector2(216, 8)
 
 [node name="KillBox" parent="." unique_id=499233768 instance=ExtResource("4_iuug4")]
 visible = false
@@ -220,9 +223,6 @@ scale = Vector2(2.3999903, 1)
 
 [node name="Checkpoint" parent="." unique_id=1838223352 instance=ExtResource("5_o0omn")]
 position = Vector2(751, -150)
-
-[node name="DoubleJumpAbil" parent="." unique_id=65691463 instance=ExtResource("6_dqpvo")]
-position = Vector2(215, 8)
 
 [node name="Checkpoint2" parent="." unique_id=956439843 instance=ExtResource("5_o0omn")]
 position = Vector2(1366, -262)

@@ -1,21 +1,22 @@
 [gd_scene format=3 uid="uid://davlmgltpvs6r"]
 
 [ext_resource type="Script" uid="uid://0taf4gkrh228" path="res://Scenes/StaticPowerups/double_jump_abil.gd" id="1_5x3b8"]
-[ext_resource type="Texture2D" uid="uid://c1dmb4sankkdb" path="res://Assets/checkpoint.png" id="1_bg7yj"]
+[ext_resource type="Texture2D" uid="uid://bco2jfs3jmyia" path="res://Sprites/double-jump.png" id="2_5x3b8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dh8xo"]
+size = Vector2(12, 13.875)
 
 [node name="DoubleJumpAbil" type="Area2D" unique_id=65691463]
 script = ExtResource("1_5x3b8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1382840814]
-visible = false
+position = Vector2(0, -0.0625)
 shape = SubResource("RectangleShape2D_dh8xo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1060560686]
+texture_filter = 1
 position = Vector2(-0.061781093, -2.842171e-14)
-scale = Vector2(-1.2528006, 1.25)
-texture = ExtResource("1_bg7yj")
+texture = ExtResource("2_5x3b8")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=640403403]
 visible = false
