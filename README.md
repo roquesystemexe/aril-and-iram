@@ -17,8 +17,8 @@
 # Aril & Iram
 The game developed by:
 
-	- Roque System
-	- Lira
+- Roque System
+- Lira
 
 ## Lore
 Aril and Iram, two brother from the Oltsac village look through the basement gate, where their parents and grandparents perform a ritual using the Power Crystals.
