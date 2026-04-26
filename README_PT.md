@@ -9,7 +9,6 @@
 	<!--Body-->
 	<br />
 	&emsp;&ensp;<a href="/README.md">English</a>
-	
 	<br />
 	&emsp;&ensp;Português
   </details>
@@ -17,8 +16,8 @@
 
 # Aril & Iram
 O jogo desenvolvido por:
-	* Roque System
-	* Lira
+	- Roque System
+	- Lira
 
 ## História
 Aril e Iram, dois irmãos da vila Oltsac, espreitam pela portão da cave onde os pais e os avós realizam um ritual através de cristais de poder.
