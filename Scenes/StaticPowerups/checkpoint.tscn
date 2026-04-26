@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://oqa62vus0odv"]
 
-[ext_resource type="Texture2D" uid="uid://c1dmb4sankkdb" path="res://Assets/checkpoint.png" id="1_86qbd"]
-[ext_resource type="Script" uid="uid://bs2ksfwjspgw3" path="res://Scenes/StaticPowerups/checkpoint.gd" id="1_ci5vf"]
+[ext_resource type="Texture2D" uid="uid://c1dmb4sankkdb" path="res://Sprites/checkpoint.png" id="1_86qbd"]
+[ext_resource type="Script" uid="uid://bs2ksfwjspgw3" path="res://Scripts/Handlers/checkpoint.gd" id="1_ci5vf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ci5vf"]
 size = Vector2(16, 16)

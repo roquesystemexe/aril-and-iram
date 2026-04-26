@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dc4tjtfmot7yl"]
 
-[ext_resource type="Script" uid="uid://cwkmjlm1e2b57" path="res://Scenes/StaticPowerups/dash_abil.gd" id="1_cn8ee"]
+[ext_resource type="Script" uid="uid://cwkmjlm1e2b57" path="res://Scripts/Abilities/dash_abil.gd" id="1_cn8ee"]
 [ext_resource type="Texture2D" uid="uid://bco2jfs3jmyia" path="res://Sprites/double-jump.png" id="2_1a1h0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dh8xo"]
