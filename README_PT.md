@@ -16,6 +16,7 @@
 
 # Aril & Iram
 O jogo desenvolvido por:
+
 	- Roque System
 	- Lira
 
