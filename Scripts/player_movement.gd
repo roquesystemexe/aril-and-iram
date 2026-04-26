@@ -29,13 +29,13 @@ func _physics_process(delta: float) -> void:
 	if (dCooldown > 0):
 		dCooldown -= 1;
 	
-	if (input_handler.get_dash() and dCooldown == 0):
+	if (input_handler.get_dash() and dCooldown == 0 and GameManager.dash_enabled):
 		velocity.x = dash_force * delta * 500 * direction;
 		dCooldown = dash_cooldown;
 	
 	#==================================================== Jumping
 	if is_on_floor():
-		if GameManager.dJump_enabled == true:
+		if GameManager.dJump_enabled:
 			double_jump = true;
 		if input_handler.get_jump():
 			velocity.y -= jump_force * delta * 100;

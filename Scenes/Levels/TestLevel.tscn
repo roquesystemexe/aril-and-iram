@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://davlmgltpvs6r" path="res://Scenes/StaticPowerups/double_jump_abil.tscn" id="6_dqpvo"]
 [ext_resource type="PackedScene" uid="uid://duu6ytyo0wp8r" path="res://Scenes/StaticPowerups/amogus.tscn" id="8_1mv4x"]
 [ext_resource type="AudioStream" uid="uid://bo3ooxkefux2a" path="res://Music/Office.mp3" id="8_a7u0l"]
+[ext_resource type="PackedScene" uid="uid://dc4tjtfmot7yl" path="res://Scenes/StaticPowerups/dash_abil.tscn" id="9_a7u0l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0omn"]
 texture = ExtResource("2_iuug4")
@@ -208,9 +209,6 @@ position = Vector2(682, 57)
 [node name="player" parent="." unique_id=705346385 instance=ExtResource("3_o0omn")]
 position = Vector2(-1, 16)
 
-[node name="DoubleJumpAbil" parent="." unique_id=65691463 instance=ExtResource("6_dqpvo")]
-position = Vector2(216, 8)
-
 [node name="KillBox" parent="." unique_id=499233768 instance=ExtResource("4_iuug4")]
 visible = false
 position = Vector2(3353.0002, 102)
@@ -235,3 +233,11 @@ parameters/looping = true
 [node name="Phaseground" type="TileMapLayer" parent="." unique_id=146411061]
 tile_map_data = PackedByteArray("AAAiAP//AAABAAAAAAAjAP//AAABAAAAAAAkAP//AAABAAAAAAAlAP//AAABAAAAAAAjAAAAAAABAAEAAAAkAAAAAAABAAEAAAAlAAAAAAABAAEAAAAmAAAAAAABAAEAAAAkAAEAAAABAAEAAAAlAAEAAAABAAEAAAAmAAEAAAABAAEAAAAnAAEAAAABAAEAAAAmAAIAAAABAAEAAAAnAAIAAAABAAEAAAAnAAMAAAABAAEAAAAoAAIAAAACAAEAAAAoAAMAAAACAAEAAAA=")
 tile_set = SubResource("TileSet_1mv4x")
+
+[node name="Abilities" type="Node" parent="." unique_id=1601944548]
+
+[node name="DoubleJumpAbil" parent="Abilities" unique_id=65691463 instance=ExtResource("6_dqpvo")]
+position = Vector2(216, 8)
+
+[node name="DashAbil" parent="Abilities" unique_id=1425795415 instance=ExtResource("9_a7u0l")]
+position = Vector2(1030, -23)

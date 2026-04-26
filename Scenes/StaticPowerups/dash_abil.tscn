@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dc4tjtfmot7yl"]
+
+[ext_resource type="Script" uid="uid://cwkmjlm1e2b57" path="res://Scenes/StaticPowerups/dash_abil.gd" id="1_cn8ee"]
+[ext_resource type="Texture2D" uid="uid://bco2jfs3jmyia" path="res://Sprites/double-jump.png" id="2_1a1h0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dh8xo"]
+size = Vector2(14, 12.109375)
+
+[node name="DashAbil" type="Area2D" unique_id=65691463]
+script = ExtResource("1_cn8ee")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1382840814]
+visible = false
+shape = SubResource("RectangleShape2D_dh8xo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1060560686]
+texture_filter = 1
+position = Vector2(-0.061781093, -2.842171e-14)
+rotation = 1.571242
+texture = ExtResource("2_1a1h0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=640403403]
+visible = false
+clip_contents = false
+offset_left = -60.999996
+offset_top = -20.999998
+offset_right = 79.0
+offset_bottom = 19.000002
+scale = Vector2(0.8242372, 0.18703006)
+text = "Press E to interact"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
