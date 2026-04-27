@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://bvhms8h87csb7"]
+
+[ext_resource type="Script" uid="uid://c2odrc3nbda02" path="res://Scripts/Handlers/main_menu.gd" id="1_38aua"]
+[ext_resource type="Texture2D" uid="uid://67gjwp7160e1" path="res://Assets/paper.png" id="2_neey8"]
+[ext_resource type="FontFile" uid="uid://3uh38upmewie" path="res://Assets/BlackFlag.ttf" id="2_pha2q"]
+[ext_resource type="FontFile" uid="uid://dtob1jjmaujqf" path="res://Assets/CloisterBlack.ttf" id="3_aur2u"]
+[ext_resource type="Texture2D" uid="uid://dh82wn62mvq38" path="res://Assets/pin.png" id="4_5wi6m"]
+[ext_resource type="Texture2D" uid="uid://c21q3r2lvcbe8" path="res://Assets/sign.png" id="5_5wi6m"]
+[ext_resource type="Texture2D" uid="uid://bgmyawg8gbmcv" path="res://Assets/nail.png" id="6_chkef"]
+
+[sub_resource type="FontVariation" id="FontVariation_penys"]
+base_font = ExtResource("2_pha2q")
+
+[node name="MainMenu" type="Node2D" unique_id=1334959659]
+script = ExtResource("1_38aua")
+
+[node name="MenuCam" type="Camera2D" parent="." unique_id=1786583156]
+position = Vector2(-3, -47)
+anchor_mode = 0
+zoom = Vector2(0.165, 0.165)
+limit_enabled = false
+
+[node name="Paper" type="Sprite2D" parent="." unique_id=985911969]
+position = Vector2(1509, 494.99997)
+rotation = -0.06632251
+scale = Vector2(3.967, 1.088)
+texture = ExtResource("2_neey8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=55022577]
+offset_left = 151.0
+offset_top = 725.0
+offset_right = 1854.0
+offset_bottom = 894.0
+theme_override_constants/separation = 252
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1801750602]
+layout_mode = 2
+theme_override_font_sizes/font_size = 117
+text = "Start the ritual"
+
+[node name="QuitButton" type="Button" parent="HBoxContainer" unique_id=1876185185]
+layout_mode = 2
+theme_override_font_sizes/font_size = 117
+text = "Quit Game"
+
+[node name="Sign" type="Sprite2D" parent="." unique_id=1606716868]
+position = Vector2(463, 238.99998)
+rotation = -0.08726646
+scale = Vector2(0.865, 0.865)
+texture = ExtResource("5_5wi6m")
+
+[node name="LabelAril" type="Label" parent="." unique_id=1091119025]
+offset_left = 171.0
+offset_top = 184.00002
+offset_right = 712.0
+offset_bottom = 526.0
+rotation = 0.017453292
+theme_override_fonts/font = SubResource("FontVariation_penys")
+theme_override_font_sizes/font_size = 175
+text = "Aril"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label&" type="Label" parent="." unique_id=1597816541]
+offset_left = 1233.0002
+offset_top = 86.00008
+offset_right = 1329.0002
+offset_bottom = 264.00006
+rotation = 0.3577925
+theme_override_font_sizes/font_size = 130
+text = "&"
+horizontal_alignment = 1
+
+[node name="LabelIram" type="Label" parent="." unique_id=273879039]
+offset_left = 1242.0001
+offset_top = 379.00003
+offset_right = 1776.0001
+offset_bottom = 695.0
+rotation = -0.13613568
+theme_override_fonts/font = ExtResource("3_aur2u")
+theme_override_font_sizes/font_size = 269
+text = "Iram"
+horizontal_alignment = 1
+
+[node name="Pin" type="Sprite2D" parent="." unique_id=797127405]
+position = Vector2(1776.0001, 412.0001)
+rotation = -0.4886922
+scale = Vector2(0.085, 0.085)
+texture = ExtResource("4_5wi6m")
+
+[node name="Pin2" type="Sprite2D" parent="." unique_id=670220176]
+position = Vector2(1275.9999, 619)
+rotation = -1.3299409
+scale = Vector2(0.095, 0.095)
+texture = ExtResource("4_5wi6m")
+
+[node name="Nail" type="Sprite2D" parent="." unique_id=1092019468]
+position = Vector2(227.00002, 276.00003)
+rotation = -0.13264503
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("6_chkef")
+
+[node name="Nail2" type="Sprite2D" parent="." unique_id=1446679216]
+position = Vector2(365.99997, 408)
+rotation = 1.4625859
+scale = Vector2(0.145, 0.145)
+texture = ExtResource("6_chkef")
+
+[node name="Nail3" type="Sprite2D" parent="." unique_id=1239888421]
+position = Vector2(719.9999, 258)
+rotation = 1.4625859
+scale = Vector2(0.115, 0.115)
+texture = ExtResource("6_chkef")
+
+[node name="Nail4" type="Sprite2D" parent="." unique_id=665771400]
+position = Vector2(554, 272)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("6_chkef")
+
+[connection signal="pressed" from="HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

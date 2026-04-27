@@ -104,7 +104,7 @@ height = 14.0
 slide_on_ceiling = false
 script = ExtResource("1_ghtyb")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1848233546]
+[node name="PlayerCam" type="Camera2D" parent="." unique_id=1848233546]
 
 [node name="PlayerAnimator" type="Node2D" parent="." unique_id=1809111778 node_paths=PackedStringArray("player_movement", "animation_player", "sprite")]
 script = ExtResource("2_gntrk")

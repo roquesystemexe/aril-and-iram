@@ -16,7 +16,8 @@ func _on_music_toggle_toggled(toggled_on: bool) -> void:
 	AudioServer.set_bus_mute(bus_index, !toggled_on)
 
 func _on_main_menu_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Scenes/Menus/main_menu.tscn")
 
 func _on_exit_button_pressed() -> void:
 	get_tree().quit()

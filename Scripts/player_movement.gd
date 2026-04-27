@@ -1,6 +1,7 @@
 extends CharacterBody2D
 class_name PlayerMovement
 
+
 @export var gravity: float = 10.0;			# Base gravity
 @export var speed: float = 125.0;			# Base speed
 @export var jump_force: float = 135.0;		# Base jump force

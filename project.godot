@@ -15,7 +15,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Aril & Iram"
-run/main_scene="uid://b4g7nchhrlk0b"
+run/main_scene="uid://bvhms8h87csb7"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
 [audio]

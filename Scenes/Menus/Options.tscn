@@ -4,15 +4,14 @@
 
 [node name="Options" type="Control" unique_id=639871782]
 process_mode = 3
-visible = false
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_m4ch3")
 
 [node name="MusicToggle" type="CheckButton" parent="." unique_id=1527969543]
 layout_mode = 0
-offset_right = 44.0
-offset_bottom = 24.0
+offset_right = 94.0
+offset_bottom = 31.0
 button_pressed = true
 action_mode = 0
 keep_pressed_outside = true
