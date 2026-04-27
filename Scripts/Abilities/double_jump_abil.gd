@@ -1,7 +1,10 @@
 extends Area2D
+class_name DJumpAbil
+
 var player_movement := PlayerMovement.new();
 var input_handler := InputHandler.new();
 var is_inside : bool = false;
+@export var item_id: String = "djump"
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
@@ -12,12 +15,7 @@ func _on_body_exited(body: Node2D) -> void:
 		is_inside = false;
 	
 func _process(_delta: float) -> void:
-#	while(is_inside):
-		
-	#print(is_inside)
 	if (is_inside and GameManager.is_interacting):
 		GameManager.dJump_enabled = true;
-		player_movement.double_jump = true;
-		queue_free();
-		#print(player_movement.double_jump);
-		#print(GameManager.is_interacting);
+		hide();
+		set_process(false);

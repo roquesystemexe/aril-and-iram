@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c8hnxg2hvofq3"]
+
+[ext_resource type="Script" uid="uid://danphiu3h57yi" path="res://Scripts/Obstacles/elevator.gd" id="1_3244b"]
+[ext_resource type="Texture2D" uid="uid://bpe3kks6e5i0a" path="res://Sprites/elevator.png" id="2_mx3ls"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nfpha"]
+texture = ExtResource("2_mx3ls")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -3, -8, -3)
+
+[sub_resource type="TileSet" id="TileSet_bdmxr"]
+physics_layer_0/collision_layer = 1
+sources/2 = SubResource("TileSetAtlasSource_nfpha")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41h21"]
+size = Vector2(16, 6)
+
+[node name="ElevatorBig" type="Node2D" unique_id=1146667401]
+script = ExtResource("1_3244b")
+
+[node name="ElevatorTile" type="TileMapLayer" parent="." unique_id=483737228]
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 2, 0, 3, 0, 0, 0, 0, 0)
+tile_set = SubResource("TileSet_bdmxr")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1654166144]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=761528999]
+process_mode = 3
+position = Vector2(8, 1)
+shape = SubResource("RectangleShape2D_41h21")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

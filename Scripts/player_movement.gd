@@ -7,9 +7,15 @@ class_name PlayerMovement
 @export var dash_force: float = 300.0;		# Base dash force
 @export var dash_cooldown: int = 65;		# Base cooldown for dash
 @export var double_jump: bool = false;		# Double Jump Checker
+@export var dash: bool = false;				# Dash Checker
 var dCooldown = 0;
 var input_handler := InputHandler.new();
 var direction = 1;
+
+func _ready() -> void:
+	# Sync the player state with the GameManager when the level starts
+	double_jump = GameManager.dJump_enabled
+	dash = GameManager.dash_enabled
 
 func _physics_process(delta: float) -> void:
 	if velocity.x > 0:

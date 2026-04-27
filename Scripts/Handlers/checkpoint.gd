@@ -5,3 +5,8 @@ func _on_body_entered(body: Node2D) -> void:
 		GameManager.checkpoint_dash = GameManager.dash_enabled
 		GameManager.respawn_point = global_position
 		GameManager.has_checkpoint = true
+		# 2. Save the abilities to the "permanent" list
+		if GameManager.dash_enabled:
+			GameManager.register_item("dash")
+		if GameManager.dJump_enabled:
+			GameManager.register_item("djump")

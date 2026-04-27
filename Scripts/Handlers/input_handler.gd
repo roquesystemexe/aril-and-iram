@@ -9,8 +9,8 @@ func _restart() -> bool:
 	else:
 		return false;
 
-func _quit() -> bool:
-	if Input.is_action_just_pressed("quit"):
+func _pause() -> bool:
+	if Input.is_action_just_pressed("pause"):
 		return true;
 	return false;
 

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://ct7lg5blliqdu"]
+
+[ext_resource type="Script" uid="uid://c7c4b74uxc8s5" path="res://Scripts/Handlers/options.gd" id="1_m4ch3"]
+
+[node name="Options" type="Control" unique_id=639871782]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m4ch3")
+
+[node name="MusicToggle" type="CheckButton" parent="." unique_id=1527969543]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+button_pressed = true
+action_mode = 0
+keep_pressed_outside = true
+text = "Music"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2048105844]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 125.0
+offset_right = 27.0
+offset_bottom = 165.0
+
+[node name="MainMenuButton" type="Button" parent="HBoxContainer" unique_id=365231952]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
+layout_mode = 2
+text = "Quit Game"
+
+[connection signal="toggled" from="MusicToggle" to="." method="_on_music_toggle_toggled"]
+[connection signal="pressed" from="HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

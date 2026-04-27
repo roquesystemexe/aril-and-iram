@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cusv36ynbuwmy"]
 
-[ext_resource type="Script" uid="uid://fwv73ivd1e70" path="res://Scripts/kill_box.gd" id="1_8ne8o"]
+[ext_resource type="Script" uid="uid://fwv73ivd1e70" path="res://Scripts/Obstacles/kill_box.gd" id="1_8ne8o"]
 [ext_resource type="Texture2D" uid="uid://dn3fjgixodu5k" path="res://Sprites/kill_box.jpg" id="2_b6dcv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v2t0o"]
