@@ -104,9 +104,9 @@ height = 14.0
 slide_on_ceiling = false
 script = ExtResource("1_ghtyb")
 
-[node name="PlayerCam" type="Camera2D" parent="." unique_id=1848233546]
-
 [node name="PlayerAnimator" type="Node2D" parent="." unique_id=1809111778 node_paths=PackedStringArray("player_movement", "animation_player", "sprite")]
+position = Vector2(7, 10)
+scale = Vector2(4, 4)
 script = ExtResource("2_gntrk")
 player_movement = NodePath("..")
 animation_player = NodePath("AnimationPlayer")
@@ -118,12 +118,13 @@ libraries/ = SubResource("AnimationLibrary_dewec")
 autoplay = &"idle"
 
 [node name="Sprite2D" type="Sprite2D" parent="PlayerAnimator" unique_id=994632060]
-position = Vector2(0, -8)
 texture = ExtResource("2_kyqiw")
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=896441421]
 visible = false
-position = Vector2(0, -7)
+scale = Vector2(4, 4)
 shape = SubResource("CapsuleShape2D_kyqiw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1225180574]

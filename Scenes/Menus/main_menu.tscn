@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dh82wn62mvq38" path="res://Assets/pin.png" id="4_5wi6m"]
 [ext_resource type="Texture2D" uid="uid://c21q3r2lvcbe8" path="res://Assets/sign.png" id="5_5wi6m"]
 [ext_resource type="Texture2D" uid="uid://bgmyawg8gbmcv" path="res://Assets/nail.png" id="6_chkef"]
+[ext_resource type="AudioStream" uid="uid://sgffq3o0hous" path="res://Music/Theme Song DEMO.mp3" id="8_4fgt5"]
 
 [sub_resource type="FontVariation" id="FontVariation_penys"]
 base_font = ExtResource("2_pha2q")
@@ -14,11 +15,8 @@ base_font = ExtResource("2_pha2q")
 [node name="MainMenu" type="Node2D" unique_id=1334959659]
 script = ExtResource("1_38aua")
 
-[node name="MenuCam" type="Camera2D" parent="." unique_id=1786583156]
-position = Vector2(-3, -47)
+[node name="MenuCam" type="Camera2D" parent="." unique_id=1142331145]
 anchor_mode = 0
-zoom = Vector2(0.165, 0.165)
-limit_enabled = false
 
 [node name="Paper" type="Sprite2D" parent="." unique_id=985911969]
 position = Vector2(1509, 494.99997)
@@ -60,7 +58,6 @@ theme_override_fonts/font = SubResource("FontVariation_penys")
 theme_override_font_sizes/font_size = 175
 text = "Aril"
 horizontal_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="Label&" type="Label" parent="." unique_id=1597816541]
 offset_left = 1233.0002
@@ -117,6 +114,16 @@ texture = ExtResource("6_chkef")
 position = Vector2(554, 272)
 scale = Vector2(0.13, 0.13)
 texture = ExtResource("6_chkef")
+
+[node name="Audio" type="Node" parent="." unique_id=1450150153]
+
+[node name="Song" type="AudioStreamPlayer" parent="Audio" unique_id=1847483640]
+process_mode = 3
+stream = ExtResource("8_4fgt5")
+volume_db = -25.897
+autoplay = true
+bus = &"Music"
+parameters/looping = true
 
 [connection signal="pressed" from="HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
