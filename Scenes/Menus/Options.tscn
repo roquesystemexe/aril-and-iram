@@ -21,15 +21,18 @@ text = "Music"
 layout_mode = 0
 offset_left = 3.0
 offset_top = 125.0
-offset_right = 27.0
-offset_bottom = 165.0
+offset_right = 1019.0
+offset_bottom = 221.0
+theme_override_constants/separation = 28
 
 [node name="MainMenuButton" type="Button" parent="HBoxContainer" unique_id=365231952]
 layout_mode = 2
+theme_override_font_sizes/font_size = 35
 text = "Main Menu"
 
 [node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
 layout_mode = 2
+theme_override_font_sizes/font_size = 35
 text = "Quit Game"
 
 [connection signal="toggled" from="MusicToggle" to="." method="_on_music_toggle_toggled"]

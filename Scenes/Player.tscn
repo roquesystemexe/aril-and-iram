@@ -105,8 +105,6 @@ slide_on_ceiling = false
 script = ExtResource("1_ghtyb")
 
 [node name="PlayerAnimator" type="Node2D" parent="." unique_id=1809111778 node_paths=PackedStringArray("player_movement", "animation_player", "sprite")]
-position = Vector2(7, 10)
-scale = Vector2(4, 4)
 script = ExtResource("2_gntrk")
 player_movement = NodePath("..")
 animation_player = NodePath("AnimationPlayer")
@@ -123,8 +121,10 @@ region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=896441421]
-visible = false
-scale = Vector2(4, 4)
 shape = SubResource("CapsuleShape2D_kyqiw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1225180574]
+physics_interpolation_mode = 1
+zoom = Vector2(4, 4)
+position_smoothing_speed = 10.0
+rotation_smoothing_speed = 10.0
