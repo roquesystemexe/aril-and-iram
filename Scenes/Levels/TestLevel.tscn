@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bw10b2ewvep88" path="res://Sprites/tiles_1.png" id="2_iuug4"]
 [ext_resource type="PackedScene" uid="uid://3pfgujl6juvm" path="res://Scenes/Player.tscn" id="3_o0omn"]
 [ext_resource type="PackedScene" uid="uid://cusv36ynbuwmy" path="res://Scenes/StaticObstacles/KillBox.tscn" id="4_iuug4"]
+[ext_resource type="Texture2D" uid="uid://bdnttq5qk7oje" path="res://Sprites/tiles_1_transparent.png" id="5_jj57x"]
 [ext_resource type="PackedScene" uid="uid://oqa62vus0odv" path="res://Scenes/StaticPowerups/checkpoint.tscn" id="5_o0omn"]
 [ext_resource type="PackedScene" uid="uid://davlmgltpvs6r" path="res://Scenes/StaticPowerups/double_jump_abil.tscn" id="6_dqpvo"]
 [ext_resource type="PackedScene" uid="uid://duu6ytyo0wp8r" path="res://Scenes/StaticPowerups/amogus.tscn" id="8_1mv4x"]
@@ -190,9 +191,53 @@ texture = ExtResource("2_iuug4")
 2:7/0 = 0
 3:7/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tsvb"]
+texture = ExtResource("5_jj57x")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_1mv4x"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_gyeg4")
+sources/1 = SubResource("TileSetAtlasSource_7tsvb")
 
 [node name="TestLevel" type="Node2D" unique_id=893113129]
 script = ExtResource("1_7e5cw")
@@ -219,7 +264,7 @@ texture_filter = 1
 position = Vector2(1915, -326)
 
 [node name="Phaseground" type="TileMapLayer" parent="." unique_id=146411061]
-tile_map_data = PackedByteArray("AAAiAP//AAABAAAAAAAjAP//AAABAAAAAAAkAP//AAABAAAAAAAlAP//AAABAAAAAAAjAAAAAAABAAEAAAAkAAAAAAABAAEAAAAlAAAAAAABAAEAAAAmAAAAAAABAAEAAAAkAAEAAAABAAEAAAAlAAEAAAABAAEAAAAmAAEAAAABAAEAAAAnAAEAAAABAAEAAAAmAAIAAAABAAEAAAAnAAIAAAABAAEAAAAnAAMAAAABAAEAAAAoAAIAAAACAAEAAAAoAAMAAAACAAEAAAA=")
+tile_map_data = PackedByteArray("AAAiAP//AQABAAAAAAAjAP//AQABAAAAAAAkAP//AQABAAAAAAAlAP//AQABAAAAAAAjAAAAAQABAAEAAAAkAAAAAQABAAEAAAAlAAAAAQABAAEAAAAmAAAAAQABAAEAAAAkAAEAAQABAAEAAAAlAAEAAQABAAEAAAAmAAEAAQABAAEAAAAnAAEAAQABAAEAAAAmAAIAAQABAAEAAAAnAAIAAQABAAEAAAAnAAMAAQABAAEAAAAoAAIAAQACAAEAAAAoAAMAAQACAAEAAAA=")
 tile_set = SubResource("TileSet_1mv4x")
 
 [node name="Checkpoints" type="Node" parent="." unique_id=729974518]

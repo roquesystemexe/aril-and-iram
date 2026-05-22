@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 	if move_cooldown > 0.0:
 		move_cooldown -= delta
 	if elevator_cooldown > 0:
-		print(elevator_cooldown)
+		#print(elevator_cooldown)
 		elevator_cooldown -= 1
 	
 	

@@ -34,11 +34,13 @@ metadata/_edit_use_anchors_ = true
 
 [node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1801750602]
 layout_mode = 2
+focus_neighbor_right = NodePath("../QuitButton")
 theme_override_font_sizes/font_size = 117
 text = "Start the ritual"
 
 [node name="QuitButton" type="Button" parent="HBoxContainer" unique_id=1876185185]
 layout_mode = 2
+focus_neighbor_left = NodePath("../PlayButton")
 theme_override_font_sizes/font_size = 117
 text = "Quit Game"
 

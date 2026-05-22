@@ -27,11 +27,13 @@ theme_override_constants/separation = 28
 
 [node name="MainMenuButton" type="Button" parent="HBoxContainer" unique_id=365231952]
 layout_mode = 2
+focus_neighbor_right = NodePath("../ExitButton")
 theme_override_font_sizes/font_size = 35
 text = "Main Menu"
 
 [node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
 layout_mode = 2
+focus_neighbor_left = NodePath("../MainMenuButton")
 theme_override_font_sizes/font_size = 35
 text = "Quit Game"
 
