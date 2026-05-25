@@ -12,3 +12,4 @@ scale = Vector2(0.8514683, 0.6607561)
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=723693365]
 layout_mode = 2
+theme_override_font_sizes/font_size = 23

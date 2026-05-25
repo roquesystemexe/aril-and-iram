@@ -1,8 +1,6 @@
 extends Control
 var input_handler := InputHandler.new();
 
-func _ready():
-	$HBoxContainer/MainMenuButton.grab_focus()
 	
 func toggle_menu() -> void:
 	var is_paused = get_tree().paused
