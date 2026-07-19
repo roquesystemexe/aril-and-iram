@@ -1,16 +1,13 @@
 extends Control
 var input_handler := InputHandler.new();
+var bus_index = AudioServer.get_bus_index("Music")
 
-	
 func toggle_menu() -> void:
 	var is_paused = get_tree().paused
 	get_tree().paused = !is_paused
 	visible = !is_paused
 
 func _on_music_toggle_toggled(toggled_on: bool) -> void:
-	# Get the index of the "Music" bus
-	var bus_index = AudioServer.get_bus_index("Music")
-	
 	# Use AudioServer to set the mute state
 	# If toggled_on is true (checked), we want NOT muted (false)
 	AudioServer.set_bus_mute(bus_index, !toggled_on)
@@ -27,3 +24,8 @@ func _unhandled_input(_event: InputEvent) -> void:
 	if input_handler._pause() and visible:
 		toggle_menu()
 		get_viewport().set_input_as_handled()
+
+
+
+func _on_volume_changed(value: float) -> void:
+	AudioServer.set_bus_volume_linear(bus_index, value/100)

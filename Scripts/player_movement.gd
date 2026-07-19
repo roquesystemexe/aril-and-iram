@@ -9,7 +9,7 @@ class_name PlayerMovement
 @export var dash_cooldown: int = 65;		# Base cooldown for dash 
 @export var double_jump: bool = false;		# Double Jump Checker
 @export var dash: bool = false;				# Dash Checker
-var dCooldown = 0;
+var dCooldown = 0;							# Dash Cooldown
 var input_handler := InputHandler.new();
 var direction = 1;
 

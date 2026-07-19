@@ -270,7 +270,7 @@ tile_set = SubResource("TileSet_1mv4x")
 [node name="Checkpoints" type="Node" parent="." unique_id=729974518]
 
 [node name="Checkpoint" parent="Checkpoints" unique_id=1838223352 instance=ExtResource("5_o0omn")]
-position = Vector2(743, -150)
+position = Vector2(785, -262)
 
 [node name="Checkpoint2" parent="Checkpoints" unique_id=956439843 instance=ExtResource("5_o0omn")]
 position = Vector2(1367, -262)
@@ -321,7 +321,6 @@ parameters/looping = true
 
 [node name="Options" parent="CanvasLayer" unique_id=639871782 instance=ExtResource("12_a1huo")]
 visible = false
-scale = Vector2(4, 4)
 
 [node name="DebugMonitor" parent="." unique_id=1065116645 instance=ExtResource("13_buhu8")]
 scale = Vector2(4, 4)
