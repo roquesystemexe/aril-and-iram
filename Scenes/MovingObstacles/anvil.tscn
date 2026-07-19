@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bk3siowmbhc0i"]
+
+[ext_resource type="Script" uid="uid://bb4e5f2mc88pi" path="res://Scripts/Obstacles/anvil.gd" id="1_44wc8"]
+[ext_resource type="Texture2D" uid="uid://hipfgsi1axyb" path="res://Sprites/anvil.png" id="1_i36c2"]
+[ext_resource type="PackedScene" uid="uid://cusv36ynbuwmy" path="res://Scenes/StaticObstacles/KillBox.tscn" id="4_qi5cy"]
+
+[node name="Anvil" type="CharacterBody2D" unique_id=1290390761]
+collision_layer = 3
+collision_mask = 129
+script = ExtResource("1_44wc8")
+
+[node name="KillBox" parent="." unique_id=499233768 instance=ExtResource("4_qi5cy")]
+visible = false
+position = Vector2(8, 16)
+scale = Vector2(0.6950452, 0.19043338)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=244001687]
+polygon = PackedVector2Array(0, 0, 0, 6, 6, 6, 6, 13, 1, 13, 1, 16, 8, 16, 15, 16, 15, 13, 10, 13, 10, 6, 16, 6, 16, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2040982493]
+position = Vector2(8, 8)
+texture = ExtResource("1_i36c2")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1990036076]
+position = Vector2(8, 16)
+target_position = Vector2(0, 3520)
+collision_mask = 129

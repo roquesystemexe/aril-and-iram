@@ -58,7 +58,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
 tooltip_text = "Adjust Volume"
-value = 100.0
+value = 50.0
 rounded = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2048105844]

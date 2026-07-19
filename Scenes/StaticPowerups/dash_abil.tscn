@@ -7,6 +7,7 @@
 size = Vector2(14, 12.109375)
 
 [node name="DashAbil" type="Area2D" unique_id=65691463]
+collision_mask = 129
 script = ExtResource("1_cn8ee")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1382840814]

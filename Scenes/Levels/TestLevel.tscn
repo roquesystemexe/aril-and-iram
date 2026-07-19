@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://12f6u6khdwbw" path="res://Scenes/MovingObstacles/elevator_big.tscn" id="10_qhub5"]
 [ext_resource type="PackedScene" uid="uid://ct7lg5blliqdu" path="res://Scenes/Menus/Options.tscn" id="12_a1huo"]
 [ext_resource type="PackedScene" uid="uid://cdk2222ebdp0p" path="res://Scenes/Menus/debug_monitor.tscn" id="13_buhu8"]
+[ext_resource type="PackedScene" uid="uid://bk3siowmbhc0i" path="res://Scenes/MovingObstacles/anvil.tscn" id="15_7tsvb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0omn"]
 texture = ExtResource("2_iuug4")
@@ -270,7 +271,7 @@ tile_set = SubResource("TileSet_1mv4x")
 [node name="Checkpoints" type="Node" parent="." unique_id=729974518]
 
 [node name="Checkpoint" parent="Checkpoints" unique_id=1838223352 instance=ExtResource("5_o0omn")]
-position = Vector2(785, -262)
+position = Vector2(749, -150)
 
 [node name="Checkpoint2" parent="Checkpoints" unique_id=956439843 instance=ExtResource("5_o0omn")]
 position = Vector2(1367, -262)
@@ -321,7 +322,15 @@ parameters/looping = true
 
 [node name="Options" parent="CanvasLayer" unique_id=639871782 instance=ExtResource("12_a1huo")]
 visible = false
+anchors_preset = 15
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="DebugMonitor" parent="." unique_id=1065116645 instance=ExtResource("13_buhu8")]
 scale = Vector2(4, 4)
 transform = Transform2D(4, 0, 0, 4, 0, 0)
+
+[node name="Anvil" parent="." unique_id=260261817 instance=ExtResource("15_7tsvb")]
+position = Vector2(590, -290)

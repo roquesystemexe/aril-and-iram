@@ -4,7 +4,7 @@ var dash_abil := DashAbil.new();
 var djump_abil := DJumpAbil.new();
 
 func _on_body_entered(body: Node2D) -> void:
-	if body is CharacterBody2D:
+	if body is CharacterBody2D && body.name == "player":
 		player_movement.dCooldown = 0;
 		if GameManager.has_checkpoint:
 			GameManager.dJump_enabled = GameManager.checkpoint_djump

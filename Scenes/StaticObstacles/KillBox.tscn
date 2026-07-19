@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v2t0o"]
 
 [node name="KillBox" type="Area2D" unique_id=499233768]
+collision_mask = 129
 script = ExtResource("1_8ne8o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1008844971]
