@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b36gx1eg8ejrv"]
+
+[ext_resource type="Texture2D" uid="uid://h3k0s8uew2bm" path="res://Sprites/trapdoor.png" id="1_8s13b"]
+[ext_resource type="Script" uid="uid://b3s30tx8pklmt" path="res://Scripts/Obstacles/trapdoor.gd" id="1_sxn4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ucx2j"]
+size = Vector2(16, 4)
+
+[node name="Trapdoor" type="RigidBody2D" unique_id=1451381638]
+script = ExtResource("1_sxn4c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2019599918]
+position = Vector2(8, 2)
+shape = SubResource("RectangleShape2D_ucx2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198296428]
+texture = ExtResource("1_8s13b")
+offset = Vector2(8, 2)
