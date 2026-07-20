@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://ct7lg5blliqdu"]
 
 [ext_resource type="Script" uid="uid://c7c4b74uxc8s5" path="res://Scripts/Handlers/options.gd" id="1_m4ch3"]
+[ext_resource type="Texture2D" uid="uid://bho3r5025r4vw" path="res://Sprites/MainMenuButton.png" id="2_0yfcm"]
+[ext_resource type="Texture2D" uid="uid://ckjfj0v7ff2gi" path="res://Sprites/QuitButton.png" id="2_kdaex"]
 
 [node name="Options" type="Control" unique_id=639871782]
 process_mode = 3
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_right = -1920.0
@@ -36,7 +39,6 @@ offset_transform_position = Vector2(-48.85, 0)
 offset_transform_scale = Vector2(2.5, 2.5)
 button_pressed = true
 action_mode = 0
-keep_pressed_outside = true
 expand_icon = true
 
 [node name="HBoxVolume" type="HBoxContainer" parent="." unique_id=203137765]
@@ -74,14 +76,20 @@ layout_mode = 2
 size_flags_horizontal = 3
 focus_neighbor_right = NodePath("../ExitButton")
 theme_override_font_sizes/font_size = 35
-text = "Main Menu"
+icon = ExtResource("2_0yfcm")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
 layout_mode = 2
 size_flags_horizontal = 3
 focus_neighbor_left = NodePath("../MainMenuButton")
 theme_override_font_sizes/font_size = 35
-text = "Quit Game"
+icon = ExtResource("2_kdaex")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [connection signal="toggled" from="HBoxMusicToggle/MusicToggle" to="." method="_on_music_toggle_toggled"]
 [connection signal="value_changed" from="HBoxVolume/HSlider" to="." method="_on_volume_changed"]

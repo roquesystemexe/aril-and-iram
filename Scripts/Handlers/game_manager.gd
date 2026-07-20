@@ -1,5 +1,6 @@
 extends Node
 
+var music_toggled: bool = true;
 var respawn_point: Vector2
 var has_checkpoint := false
 var dJump_enabled: bool = false;

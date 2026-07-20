@@ -2,6 +2,9 @@ extends Control
 var input_handler := InputHandler.new();
 var bus_index = AudioServer.get_bus_index("Music")
 
+func _process(delta: float) -> void:
+	$HBoxMusicToggle/MusicToggle.button_pressed = GameManager.music_toggled
+
 func toggle_menu() -> void:
 	var is_paused = get_tree().paused
 	get_tree().paused = !is_paused
@@ -11,6 +14,7 @@ func _on_music_toggle_toggled(toggled_on: bool) -> void:
 	# Use AudioServer to set the mute state
 	# If toggled_on is true (checked), we want NOT muted (false)
 	AudioServer.set_bus_mute(bus_index, !toggled_on)
+	GameManager.music_toggled = toggled_on
 
 func _on_main_menu_button_pressed() -> void:
 	get_tree().paused = false

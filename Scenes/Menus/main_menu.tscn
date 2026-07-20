@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://c2odrc3nbda02" path="res://Scripts/Handlers/main_menu.gd" id="1_38aua"]
 [ext_resource type="Texture2D" uid="uid://67gjwp7160e1" path="res://Assets/paper.png" id="2_neey8"]
 [ext_resource type="FontFile" uid="uid://3uh38upmewie" path="res://Assets/BlackFlag.ttf" id="2_pha2q"]
+[ext_resource type="Texture2D" uid="uid://gm2vj1aghd1i" path="res://Sprites/PlayButton.png" id="3_anmaw"]
 [ext_resource type="FontFile" uid="uid://dtob1jjmaujqf" path="res://Assets/CloisterBlack.ttf" id="3_aur2u"]
 [ext_resource type="Texture2D" uid="uid://dh82wn62mvq38" path="res://Assets/pin.png" id="4_5wi6m"]
+[ext_resource type="Texture2D" uid="uid://ckjfj0v7ff2gi" path="res://Sprites/QuitButton.png" id="4_ftsii"]
 [ext_resource type="Texture2D" uid="uid://c21q3r2lvcbe8" path="res://Assets/sign.png" id="5_5wi6m"]
 [ext_resource type="Texture2D" uid="uid://bgmyawg8gbmcv" path="res://Assets/nail.png" id="6_chkef"]
 [ext_resource type="AudioStream" uid="uid://sgffq3o0hous" path="res://Music/Theme Song DEMO.mp3" id="8_4fgt5"]
@@ -34,15 +36,23 @@ metadata/_edit_use_anchors_ = true
 
 [node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1801750602]
 layout_mode = 2
+size_flags_horizontal = 3
 focus_neighbor_right = NodePath("../QuitButton")
 theme_override_font_sizes/font_size = 117
-text = "Start the ritual"
+icon = ExtResource("3_anmaw")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="QuitButton" type="Button" parent="HBoxContainer" unique_id=1876185185]
 layout_mode = 2
+size_flags_horizontal = 3
 focus_neighbor_left = NodePath("../PlayButton")
 theme_override_font_sizes/font_size = 117
-text = "Quit Game"
+icon = ExtResource("4_ftsii")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="Sign" type="Sprite2D" parent="." unique_id=1606716868]
 position = Vector2(463, 238.99998)
@@ -62,9 +72,9 @@ text = "Aril"
 horizontal_alignment = 1
 
 [node name="Label&" type="Label" parent="." unique_id=1597816541]
-offset_left = 1233.0002
+offset_left = 1129.0001
 offset_top = 86.00008
-offset_right = 1329.0002
+offset_right = 1225.0001
 offset_bottom = 264.00006
 rotation = 0.3577925
 theme_override_font_sizes/font_size = 130

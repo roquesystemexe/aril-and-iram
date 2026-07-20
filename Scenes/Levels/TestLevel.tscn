@@ -149,96 +149,123 @@ texture = ExtResource("2_iuug4")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_5ms4e")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gyeg4"]
-texture = ExtResource("2_iuug4")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-0:4/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-0:5/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-0:6/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-0:7/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tsvb"]
 texture = ExtResource("5_jj57x")
 0:0/0 = 0
+0:0/0/modulate = Color(1, 1, 1, 0.93333334)
 1:0/0 = 0
+1:0/0/modulate = Color(1, 1, 1, 0.93333334)
 2:0/0 = 0
+2:0/0/modulate = Color(1, 1, 1, 0.93333334)
 3:0/0 = 0
+3:0/0/modulate = Color(1, 1, 1, 0.93333334)
 4:0/0 = 0
+4:0/0/modulate = Color(1, 1, 1, 0.93333334)
 5:0/0 = 0
+5:0/0/modulate = Color(1, 1, 1, 0.93333334)
 0:1/0 = 0
+0:1/0/modulate = Color(1, 1, 1, 0.93333334)
 1:1/0 = 0
+1:1/0/modulate = Color(1, 1, 1, 0.93333334)
 2:1/0 = 0
+2:1/0/modulate = Color(1, 1, 1, 0.93333334)
 3:1/0 = 0
+3:1/0/modulate = Color(1, 1, 1, 0.93333334)
 4:1/0 = 0
+4:1/0/modulate = Color(1, 1, 1, 0.93333334)
 5:1/0 = 0
+5:1/0/modulate = Color(1, 1, 1, 0.93333334)
 0:2/0 = 0
+0:2/0/modulate = Color(1, 1, 1, 0.93333334)
 1:2/0 = 0
+1:2/0/modulate = Color(1, 1, 1, 0.93333334)
 2:2/0 = 0
+2:2/0/modulate = Color(1, 1, 1, 0.93333334)
 3:2/0 = 0
+3:2/0/modulate = Color(1, 1, 1, 0.93333334)
 0:3/0 = 0
+0:3/0/modulate = Color(1, 1, 1, 0.93333334)
 1:3/0 = 0
+1:3/0/modulate = Color(1, 1, 1, 0.93333334)
 2:3/0 = 0
+2:3/0/modulate = Color(1, 1, 1, 0.93333334)
 3:3/0 = 0
+3:3/0/modulate = Color(1, 1, 1, 0.93333334)
 0:4/0 = 0
+0:4/0/modulate = Color(1, 1, 1, 0.93333334)
 1:4/0 = 0
+1:4/0/modulate = Color(1, 1, 1, 0.93333334)
 2:4/0 = 0
+2:4/0/modulate = Color(1, 1, 1, 0.93333334)
 3:4/0 = 0
+3:4/0/modulate = Color(1, 1, 1, 0.93333334)
 4:4/0 = 0
+4:4/0/modulate = Color(1, 1, 1, 0.93333334)
 5:4/0 = 0
+5:4/0/modulate = Color(1, 1, 1, 0.93333334)
 0:5/0 = 0
+0:5/0/modulate = Color(1, 1, 1, 0.93333334)
 1:5/0 = 0
+1:5/0/modulate = Color(1, 1, 1, 0.93333334)
 2:5/0 = 0
+2:5/0/modulate = Color(1, 1, 1, 0.93333334)
 3:5/0 = 0
+3:5/0/modulate = Color(1, 1, 1, 0.93333334)
 4:5/0 = 0
+4:5/0/modulate = Color(1, 1, 1, 0.93333334)
 5:5/0 = 0
+5:5/0/modulate = Color(1, 1, 1, 0.93333334)
 0:6/0 = 0
+0:6/0/modulate = Color(1, 1, 1, 0.93333334)
 1:6/0 = 0
+1:6/0/modulate = Color(1, 1, 1, 0.93333334)
 2:6/0 = 0
+2:6/0/modulate = Color(1, 1, 1, 0.93333334)
 3:6/0 = 0
+3:6/0/modulate = Color(1, 1, 1, 0.93333334)
 0:7/0 = 0
+0:7/0/modulate = Color(1, 1, 1, 0.93333334)
 1:7/0 = 0
+1:7/0/modulate = Color(1, 1, 1, 0.93333334)
 2:7/0 = 0
+2:7/0/modulate = Color(1, 1, 1, 0.93333334)
 3:7/0 = 0
+3:7/0/modulate = Color(1, 1, 1, 0.93333334)
+4:2/0 = 0
+4:2/0/modulate = Color(1, 1, 1, 0.93333334)
+4:3/0 = 0
+4:3/0/modulate = Color(1, 1, 1, 0.93333334)
+4:6/0 = 0
+4:6/0/modulate = Color(1, 1, 1, 0.93333334)
+4:7/0 = 0
+4:7/0/modulate = Color(1, 1, 1, 0.70980394)
+5:2/0 = 0
+5:2/0/modulate = Color(1, 1, 1, 0.93333334)
+5:3/0 = 0
+5:3/0/modulate = Color(1, 1, 1, 0.93333334)
+5:6/0 = 0
+5:6/0/modulate = Color(1, 1, 1, 0.70980394)
+5:7/0 = 0
+5:7/0/modulate = Color(1, 1, 1, 0.70980394)
+6:0/0 = 0
+6:1/0 = 0
+6:1/0/modulate = Color(1, 1, 1, 0.93333334)
+6:2/0 = 0
+6:2/0/modulate = Color(1, 1, 1, 0.93333334)
+6:3/0 = 0
+6:3/0/modulate = Color(1, 1, 1, 0.70980394)
+6:4/0 = 0
+6:4/0/modulate = Color(1, 1, 1, 0.8745098)
+6:5/0 = 0
+6:5/0/modulate = Color(1, 1, 1, 0.8745098)
+6:6/0 = 0
+6:6/0/modulate = Color(1, 1, 1, 0.70980394)
+6:7/0 = 0
+6:7/0/modulate = Color(1, 1, 1, 0.70980394)
 
 [sub_resource type="TileSet" id="TileSet_1mv4x"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_gyeg4")
-sources/1 = SubResource("TileSetAtlasSource_7tsvb")
+sources/3 = SubResource("TileSetAtlasSource_7tsvb")
 
 [node name="TestLevel" type="Node2D" unique_id=893113129]
 script = ExtResource("1_7e5cw")
@@ -265,7 +292,7 @@ texture_filter = 1
 position = Vector2(1915, -326)
 
 [node name="Phaseground" type="TileMapLayer" parent="." unique_id=146411061]
-tile_map_data = PackedByteArray("AAAiAP//AQABAAAAAAAjAP//AQABAAAAAAAkAP//AQABAAAAAAAlAP//AQABAAAAAAAjAAAAAQABAAEAAAAkAAAAAQABAAEAAAAlAAAAAQABAAEAAAAmAAAAAQABAAEAAAAkAAEAAQABAAEAAAAlAAEAAQABAAEAAAAmAAEAAQABAAEAAAAnAAEAAQABAAEAAAAmAAIAAQABAAEAAAAnAAIAAQABAAEAAAAnAAMAAQABAAEAAAAoAAIAAQACAAEAAAAoAAMAAQACAAEAAAA=")
+tile_map_data = PackedByteArray("AAAiAP//AwABAAAAAAAjAP//AwABAAAAAAAkAP//AwABAAAAAAAlAP//AwABAAAAAAAjAAAAAwABAAEAAAAkAAAAAwABAAEAAAAlAAAAAwABAAEAAAAmAAAAAwABAAEAAAAkAAEAAwABAAEAAAAlAAEAAwABAAEAAAAmAAEAAwABAAEAAAAnAAEAAwABAAEAAAAmAAIAAwABAAEAAAAnAAIAAwABAAEAAAAnAAMAAwABAAEAAAAoAAIAAwACAAEAAAAoAAMAAwACAAEAAAAmAAMAAwABAAEAAAAlAAIAAwABAAEAAAAkAAIAAwABAAEAAAAjAAEAAwABAAEAAAAiAAAAAwABAAEAAAAhAP//AwABAAAAAAAmAP//AwABAAAAAAAnAAAAAwABAAEAAAAoAAEAAwAEAAAAAAAoAAQAAwAEAAEAAAAnAAQAAwABAAEAAAA=")
 tile_set = SubResource("TileSet_1mv4x")
 
 [node name="Checkpoints" type="Node" parent="." unique_id=729974518]
@@ -297,6 +324,14 @@ scale = Vector2(131.82605, 2.0562577)
 [node name="KillBox2" parent="KillBoxes" unique_id=545140876 instance=ExtResource("4_iuug4")]
 visible = false
 position = Vector2(1358, -237)
+
+[node name="Anvils" type="Node" parent="." unique_id=1034599739]
+
+[node name="Anvil" parent="Anvils" unique_id=260261817 instance=ExtResource("15_7tsvb")]
+position = Vector2(590, -290)
+
+[node name="Anvil2" parent="Anvils" unique_id=1290390761 instance=ExtResource("15_7tsvb")]
+position = Vector2(672, -472)
 
 [node name="Elevators" type="Node" parent="." unique_id=226985526]
 
@@ -331,6 +366,3 @@ grow_vertical = 2
 [node name="DebugMonitor" parent="." unique_id=1065116645 instance=ExtResource("13_buhu8")]
 scale = Vector2(4, 4)
 transform = Transform2D(4, 0, 0, 4, 0, 0)
-
-[node name="Anvil" parent="." unique_id=260261817 instance=ExtResource("15_7tsvb")]
-position = Vector2(590, -290)
