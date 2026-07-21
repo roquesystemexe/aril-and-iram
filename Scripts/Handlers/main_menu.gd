@@ -11,3 +11,7 @@ func _on_play_button_pressed() -> void:
 	$HBoxContainer/QuitButton.button_pressed = false
 	$MenuCam.enabled = false
 	get_tree().change_scene_to_file("res://Scenes/Levels/TestLevel.tscn")
+
+
+func _on_options_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/Menus/Options.tscn")

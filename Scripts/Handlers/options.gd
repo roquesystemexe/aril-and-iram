@@ -2,13 +2,18 @@ extends Control
 var input_handler := InputHandler.new();
 var bus_index = AudioServer.get_bus_index("Music")
 
+func _ready() -> void:
+	$HBoxVolume/HSlider.value = GameManager.music_volume
+	print(GameManager.music_volume)
+
 func _process(_delta: float) -> void:
 	$HBoxMusicToggle/MusicToggle.button_pressed = GameManager.music_toggled
 
 func toggle_menu() -> void:
-	var is_paused = get_tree().paused
-	get_tree().paused = !is_paused
-	visible = !is_paused
+	if scene_file_path == "res://Scenes/Menus/main_menu.tscn":
+		var is_paused = get_tree().paused
+		get_tree().paused = !is_paused
+		visible = !is_paused
 
 func _on_music_toggle_toggled(toggled_on: bool) -> void:
 	# Use AudioServer to set the mute state
@@ -33,3 +38,5 @@ func _unhandled_input(_event: InputEvent) -> void:
 
 func _on_volume_changed(value: float) -> void:
 	AudioServer.set_bus_volume_linear(bus_index, value/100)
+	$HBoxVolume/HSlider.value = value
+	GameManager.music_volume = value

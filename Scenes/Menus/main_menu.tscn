@@ -7,6 +7,7 @@
 [ext_resource type="FontFile" uid="uid://dtob1jjmaujqf" path="res://Assets/CloisterBlack.ttf" id="3_aur2u"]
 [ext_resource type="Texture2D" uid="uid://dh82wn62mvq38" path="res://Assets/pin.png" id="4_5wi6m"]
 [ext_resource type="Texture2D" uid="uid://ckjfj0v7ff2gi" path="res://Sprites/QuitButton.png" id="4_ftsii"]
+[ext_resource type="Texture2D" uid="uid://dcs6mytvj5r4e" path="res://Sprites/OptionsButton.png" id="4_lg1h6"]
 [ext_resource type="Texture2D" uid="uid://c21q3r2lvcbe8" path="res://Assets/sign.png" id="5_5wi6m"]
 [ext_resource type="Texture2D" uid="uid://bgmyawg8gbmcv" path="res://Assets/nail.png" id="6_chkef"]
 [ext_resource type="AudioStream" uid="uid://sgffq3o0hous" path="res://Music/Theme Song DEMO.mp3" id="8_4fgt5"]
@@ -27,11 +28,12 @@ scale = Vector2(3.967, 1.088)
 texture = ExtResource("2_neey8")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=55022577]
-offset_left = 151.0
-offset_top = 725.0
-offset_right = 1854.0
-offset_bottom = 894.0
-theme_override_constants/separation = 252
+offset_left = 81.0
+offset_top = 774.0
+offset_right = 1784.0
+offset_bottom = 943.0
+scale = Vector2(1.0399998, 1)
+theme_override_constants/separation = 20
 metadata/_edit_use_anchors_ = true
 
 [node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1801750602]
@@ -40,6 +42,14 @@ size_flags_horizontal = 3
 focus_neighbor_right = NodePath("../QuitButton")
 theme_override_font_sizes/font_size = 117
 icon = ExtResource("3_anmaw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="OptionsButton" type="Button" parent="HBoxContainer" unique_id=1964579475]
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("4_lg1h6")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -137,4 +147,5 @@ bus = &"Music"
 parameters/looping = true
 
 [connection signal="pressed" from="HBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
