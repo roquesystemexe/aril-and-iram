@@ -2,7 +2,7 @@ extends Control
 var input_handler := InputHandler.new();
 var bus_index = AudioServer.get_bus_index("Music")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	$HBoxMusicToggle/MusicToggle.button_pressed = GameManager.music_toggled
 
 func toggle_menu() -> void:

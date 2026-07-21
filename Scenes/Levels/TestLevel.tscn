@@ -8,13 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://oqa62vus0odv" path="res://Scenes/StaticPowerups/checkpoint.tscn" id="5_o0omn"]
 [ext_resource type="PackedScene" uid="uid://davlmgltpvs6r" path="res://Scenes/StaticPowerups/double_jump_abil.tscn" id="6_dqpvo"]
 [ext_resource type="PackedScene" uid="uid://duu6ytyo0wp8r" path="res://Scenes/StaticPowerups/amogus.tscn" id="8_1mv4x"]
-[ext_resource type="AudioStream" uid="uid://bo3ooxkefux2a" path="res://Music/Office.mp3" id="8_a7u0l"]
 [ext_resource type="PackedScene" uid="uid://dc4tjtfmot7yl" path="res://Scenes/StaticPowerups/dash_abil.tscn" id="9_a7u0l"]
 [ext_resource type="PackedScene" uid="uid://c8hnxg2hvofq3" path="res://Scenes/MovingObstacles/elevator_small.tscn" id="10_cuare"]
 [ext_resource type="PackedScene" uid="uid://12f6u6khdwbw" path="res://Scenes/MovingObstacles/elevator_big.tscn" id="10_qhub5"]
 [ext_resource type="PackedScene" uid="uid://ct7lg5blliqdu" path="res://Scenes/Menus/Options.tscn" id="12_a1huo"]
+[ext_resource type="AudioStream" uid="uid://fvsehywyieq3" path="res://Music/Origami [Chill Electro-Jazz CC-BY] - Scott Buckley.mp3" id="13_7tsvb"]
 [ext_resource type="PackedScene" uid="uid://cdk2222ebdp0p" path="res://Scenes/Menus/debug_monitor.tscn" id="13_buhu8"]
 [ext_resource type="PackedScene" uid="uid://bk3siowmbhc0i" path="res://Scenes/MovingObstacles/anvil.tscn" id="15_7tsvb"]
+[ext_resource type="PackedScene" uid="uid://b36gx1eg8ejrv" path="res://Scenes/StaticObstacles/trapdoor.tscn" id="16_hxr1x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o0omn"]
 texture = ExtResource("2_iuug4")
@@ -152,116 +153,117 @@ sources/0 = SubResource("TileSetAtlasSource_5ms4e")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tsvb"]
 texture = ExtResource("5_jj57x")
 0:0/0 = 0
-0:0/0/modulate = Color(1, 1, 1, 0.93333334)
+0:0/0/modulate = Color(1, 1, 1, 0.74509805)
 1:0/0 = 0
-1:0/0/modulate = Color(1, 1, 1, 0.93333334)
+1:0/0/modulate = Color(1, 1, 1, 0.74509805)
 2:0/0 = 0
-2:0/0/modulate = Color(1, 1, 1, 0.93333334)
+2:0/0/modulate = Color(1, 1, 1, 0.74509805)
 3:0/0 = 0
-3:0/0/modulate = Color(1, 1, 1, 0.93333334)
+3:0/0/modulate = Color(1, 1, 1, 0.74509805)
 4:0/0 = 0
-4:0/0/modulate = Color(1, 1, 1, 0.93333334)
+4:0/0/modulate = Color(1, 1, 1, 0.74509805)
 5:0/0 = 0
-5:0/0/modulate = Color(1, 1, 1, 0.93333334)
+5:0/0/modulate = Color(1, 1, 1, 0.74509805)
 0:1/0 = 0
-0:1/0/modulate = Color(1, 1, 1, 0.93333334)
+0:1/0/modulate = Color(1, 1, 1, 0.74509805)
 1:1/0 = 0
-1:1/0/modulate = Color(1, 1, 1, 0.93333334)
+1:1/0/modulate = Color(1, 1, 1, 0.74509805)
 2:1/0 = 0
-2:1/0/modulate = Color(1, 1, 1, 0.93333334)
+2:1/0/modulate = Color(1, 1, 1, 0.74509805)
 3:1/0 = 0
-3:1/0/modulate = Color(1, 1, 1, 0.93333334)
+3:1/0/modulate = Color(1, 1, 1, 0.74509805)
 4:1/0 = 0
-4:1/0/modulate = Color(1, 1, 1, 0.93333334)
+4:1/0/modulate = Color(1, 1, 1, 0.74509805)
 5:1/0 = 0
-5:1/0/modulate = Color(1, 1, 1, 0.93333334)
+5:1/0/modulate = Color(1, 1, 1, 0.74509805)
 0:2/0 = 0
-0:2/0/modulate = Color(1, 1, 1, 0.93333334)
+0:2/0/modulate = Color(1, 1, 1, 0.74509805)
 1:2/0 = 0
-1:2/0/modulate = Color(1, 1, 1, 0.93333334)
+1:2/0/modulate = Color(1, 1, 1, 0.74509805)
 2:2/0 = 0
-2:2/0/modulate = Color(1, 1, 1, 0.93333334)
+2:2/0/modulate = Color(1, 1, 1, 0.74509805)
 3:2/0 = 0
-3:2/0/modulate = Color(1, 1, 1, 0.93333334)
+3:2/0/modulate = Color(1, 1, 1, 0.74509805)
 0:3/0 = 0
-0:3/0/modulate = Color(1, 1, 1, 0.93333334)
+0:3/0/modulate = Color(1, 1, 1, 0.74509805)
 1:3/0 = 0
-1:3/0/modulate = Color(1, 1, 1, 0.93333334)
+1:3/0/modulate = Color(1, 1, 1, 0.74509805)
 2:3/0 = 0
-2:3/0/modulate = Color(1, 1, 1, 0.93333334)
+2:3/0/modulate = Color(1, 1, 1, 0.74509805)
 3:3/0 = 0
-3:3/0/modulate = Color(1, 1, 1, 0.93333334)
+3:3/0/modulate = Color(1, 1, 1, 0.74509805)
 0:4/0 = 0
-0:4/0/modulate = Color(1, 1, 1, 0.93333334)
+0:4/0/modulate = Color(1, 1, 1, 0.74509805)
 1:4/0 = 0
-1:4/0/modulate = Color(1, 1, 1, 0.93333334)
+1:4/0/modulate = Color(1, 1, 1, 0.74509805)
 2:4/0 = 0
-2:4/0/modulate = Color(1, 1, 1, 0.93333334)
+2:4/0/modulate = Color(1, 1, 1, 0.74509805)
 3:4/0 = 0
-3:4/0/modulate = Color(1, 1, 1, 0.93333334)
+3:4/0/modulate = Color(1, 1, 1, 0.74509805)
 4:4/0 = 0
-4:4/0/modulate = Color(1, 1, 1, 0.93333334)
+4:4/0/modulate = Color(1, 1, 1, 0.74509805)
 5:4/0 = 0
-5:4/0/modulate = Color(1, 1, 1, 0.93333334)
+5:4/0/modulate = Color(1, 1, 1, 0.74509805)
 0:5/0 = 0
-0:5/0/modulate = Color(1, 1, 1, 0.93333334)
+0:5/0/modulate = Color(1, 1, 1, 0.74509805)
 1:5/0 = 0
-1:5/0/modulate = Color(1, 1, 1, 0.93333334)
+1:5/0/modulate = Color(1, 1, 1, 0.74509805)
 2:5/0 = 0
-2:5/0/modulate = Color(1, 1, 1, 0.93333334)
+2:5/0/modulate = Color(1, 1, 1, 0.74509805)
 3:5/0 = 0
-3:5/0/modulate = Color(1, 1, 1, 0.93333334)
+3:5/0/modulate = Color(1, 1, 1, 0.74509805)
 4:5/0 = 0
-4:5/0/modulate = Color(1, 1, 1, 0.93333334)
+4:5/0/modulate = Color(1, 1, 1, 0.74509805)
 5:5/0 = 0
-5:5/0/modulate = Color(1, 1, 1, 0.93333334)
+5:5/0/modulate = Color(1, 1, 1, 0.74509805)
 0:6/0 = 0
-0:6/0/modulate = Color(1, 1, 1, 0.93333334)
+0:6/0/modulate = Color(1, 1, 1, 0.74509805)
 1:6/0 = 0
-1:6/0/modulate = Color(1, 1, 1, 0.93333334)
+1:6/0/modulate = Color(1, 1, 1, 0.74509805)
 2:6/0 = 0
-2:6/0/modulate = Color(1, 1, 1, 0.93333334)
+2:6/0/modulate = Color(1, 1, 1, 0.74509805)
 3:6/0 = 0
-3:6/0/modulate = Color(1, 1, 1, 0.93333334)
+3:6/0/modulate = Color(1, 1, 1, 0.74509805)
 0:7/0 = 0
-0:7/0/modulate = Color(1, 1, 1, 0.93333334)
+0:7/0/modulate = Color(1, 1, 1, 0.74509805)
 1:7/0 = 0
-1:7/0/modulate = Color(1, 1, 1, 0.93333334)
+1:7/0/modulate = Color(1, 1, 1, 0.74509805)
 2:7/0 = 0
-2:7/0/modulate = Color(1, 1, 1, 0.93333334)
+2:7/0/modulate = Color(1, 1, 1, 0.74509805)
 3:7/0 = 0
-3:7/0/modulate = Color(1, 1, 1, 0.93333334)
+3:7/0/modulate = Color(1, 1, 1, 0.74509805)
 4:2/0 = 0
-4:2/0/modulate = Color(1, 1, 1, 0.93333334)
+4:2/0/modulate = Color(1, 1, 1, 0.74509805)
 4:3/0 = 0
-4:3/0/modulate = Color(1, 1, 1, 0.93333334)
+4:3/0/modulate = Color(1, 1, 1, 0.74509805)
 4:6/0 = 0
-4:6/0/modulate = Color(1, 1, 1, 0.93333334)
+4:6/0/modulate = Color(1, 1, 1, 0.74509805)
 4:7/0 = 0
-4:7/0/modulate = Color(1, 1, 1, 0.70980394)
+4:7/0/modulate = Color(1, 1, 1, 0.74509805)
 5:2/0 = 0
-5:2/0/modulate = Color(1, 1, 1, 0.93333334)
+5:2/0/modulate = Color(1, 1, 1, 0.74509805)
 5:3/0 = 0
-5:3/0/modulate = Color(1, 1, 1, 0.93333334)
+5:3/0/modulate = Color(1, 1, 1, 0.74509805)
 5:6/0 = 0
-5:6/0/modulate = Color(1, 1, 1, 0.70980394)
+5:6/0/modulate = Color(1, 1, 1, 0.74509805)
 5:7/0 = 0
-5:7/0/modulate = Color(1, 1, 1, 0.70980394)
+5:7/0/modulate = Color(1, 1, 1, 0.74509805)
 6:0/0 = 0
+6:0/0/modulate = Color(1, 1, 1, 0.74509805)
 6:1/0 = 0
-6:1/0/modulate = Color(1, 1, 1, 0.93333334)
+6:1/0/modulate = Color(1, 1, 1, 0.74509805)
 6:2/0 = 0
-6:2/0/modulate = Color(1, 1, 1, 0.93333334)
+6:2/0/modulate = Color(1, 1, 1, 0.74509805)
 6:3/0 = 0
-6:3/0/modulate = Color(1, 1, 1, 0.70980394)
+6:3/0/modulate = Color(1, 1, 1, 0.74509805)
 6:4/0 = 0
-6:4/0/modulate = Color(1, 1, 1, 0.8745098)
+6:4/0/modulate = Color(1, 1, 1, 0.74509805)
 6:5/0 = 0
-6:5/0/modulate = Color(1, 1, 1, 0.8745098)
+6:5/0/modulate = Color(1, 1, 1, 0.74509805)
 6:6/0 = 0
-6:6/0/modulate = Color(1, 1, 1, 0.70980394)
+6:6/0/modulate = Color(1, 1, 1, 0.74509805)
 6:7/0 = 0
-6:7/0/modulate = Color(1, 1, 1, 0.70980394)
+6:7/0/modulate = Color(1, 1, 1, 0.74509805)
 
 [sub_resource type="TileSet" id="TileSet_1mv4x"]
 physics_layer_0/collision_layer = 1
@@ -401,11 +403,24 @@ position = Vector2(-656, 184)
 tile_map_data = PackedByteArray("AAAiAP//AwABAAAAAAAjAP//AwABAAAAAAAkAP//AwABAAAAAAAlAP//AwABAAAAAAAjAAAAAwABAAEAAAAkAAAAAwABAAEAAAAlAAAAAwABAAEAAAAmAAAAAwABAAEAAAAkAAEAAwABAAEAAAAlAAEAAwABAAEAAAAmAAEAAwABAAEAAAAnAAEAAwABAAEAAAAmAAIAAwABAAEAAAAnAAIAAwABAAEAAAAnAAMAAwABAAEAAAAoAAIAAwACAAEAAAAoAAMAAwACAAEAAAAmAAMAAwABAAEAAAAlAAIAAwABAAEAAAAkAAIAAwABAAEAAAAjAAEAAwABAAEAAAAiAAAAAwABAAEAAAAhAP//AwABAAAAAAAmAP//AwABAAAAAAAnAAAAAwABAAEAAAAoAAEAAwAEAAAAAAAoAAQAAwAEAAEAAAAnAAQAAwABAAEAAAA=")
 tile_set = SubResource("TileSet_1mv4x")
 
+[node name="Trapdoor" parent="VisLayer3" unique_id=1451381638 instance=ExtResource("16_hxr1x")]
+position = Vector2(-112, 168)
+
+[node name="Trapdoor2" parent="VisLayer3" unique_id=1665506332 instance=ExtResource("16_hxr1x")]
+position = Vector2(-96, 168)
+
+[node name="Trapdoor3" parent="VisLayer3" unique_id=689595397 instance=ExtResource("16_hxr1x")]
+position = Vector2(-80, 168)
+
+[node name="Trapdoor4" parent="VisLayer3" unique_id=125838 instance=ExtResource("16_hxr1x")]
+position = Vector2(-64, 168)
+
 [node name="Audio" type="Node" parent="." unique_id=2022268982]
 
 [node name="Song" type="AudioStreamPlayer" parent="Audio" unique_id=1009228809]
 process_mode = 3
-stream = ExtResource("8_a7u0l")
+stream = ExtResource("13_7tsvb")
+volume_db = -19.705
 autoplay = true
 bus = &"Music"
 parameters/looping = true

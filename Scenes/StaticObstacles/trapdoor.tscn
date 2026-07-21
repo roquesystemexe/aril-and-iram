@@ -4,15 +4,31 @@
 [ext_resource type="Script" uid="uid://b3s30tx8pklmt" path="res://Scripts/Obstacles/trapdoor.gd" id="1_sxn4c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ucx2j"]
-size = Vector2(16, 4)
+size = Vector2(16, 17)
 
-[node name="Trapdoor" type="RigidBody2D" unique_id=1451381638]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frmmx"]
+size = Vector2(16, 7)
+
+[node name="Trapdoor" type="RigidBody2D" unique_id=2102223005]
+gravity_scale = 0.0
 script = ExtResource("1_sxn4c")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2019599918]
-position = Vector2(8, 2)
+[node name="Area2D" type="Area2D" parent="." unique_id=392138432]
+collision_layer = 0
+collision_mask = 129
+
+[node name="Detection" type="CollisionShape2D" parent="Area2D" unique_id=2019599918]
+position = Vector2(8, 7.5)
 shape = SubResource("RectangleShape2D_ucx2j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1905513604]
+position = Vector2(8, 3.5)
+shape = SubResource("RectangleShape2D_frmmx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1198296428]
 texture = ExtResource("1_8s13b")
-offset = Vector2(8, 2)
+offset = Vector2(8, 8)
+hframes = 2
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
