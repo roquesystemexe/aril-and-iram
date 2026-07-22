@@ -17,7 +17,7 @@ func _on_body_entered(body: Node2D) -> void:
 					item.show()
 					item.set_process(true)
 					# Assuming your collision shape is in the same path for both
-					var col = item.get_node_or_null("Area2D/CollisionShape2D")
+					var col = item.get_node_or_null("CollisionShape2D")
 					if col: col.disabled = false
 		else:
 			GameManager.dJump_enabled = false;

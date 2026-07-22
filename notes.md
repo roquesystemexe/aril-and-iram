@@ -1,12 +1,14 @@
 ## TO DO
+# BUGS TO FIX
+- None
+
 # Features
-- Fix checkpoints: << WORKING ON THIS RIGHT NOW
-	> Remember checkpoint and abilities -> Reload scene -> TP player to checkpoint -> Remove collected abilities
 - Add top-down
 - Add enemies (NPCs)
 - Add friends (NPCs)
 - Add inventory system?
 - Add puzzles (using inventory system?)
+- Add save system (Simple text file?)
 
 # Sprites
 - All:

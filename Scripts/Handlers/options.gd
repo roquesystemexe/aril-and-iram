@@ -10,7 +10,7 @@ func _process(_delta: float) -> void:
 	$HBoxMusicToggle/MusicToggle.button_pressed = GameManager.music_toggled
 
 func toggle_menu() -> void:
-	if scene_file_path == "res://Scenes/Menus/main_menu.tscn":
+	if scene_file_path != "res://Scenes/Menus/main_menu.tscn":
 		var is_paused = get_tree().paused
 		get_tree().paused = !is_paused
 		visible = !is_paused
