@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bsjade6egg8lq"]
+
+[ext_resource type="Script" uid="uid://dtrebee3tjivn" path="res://Scripts/Enemies/enemy_general.gd" id="1_73c5o"]
+[ext_resource type="Texture2D" uid="uid://cahtw21piu4ru" path="res://Sprites/enemy_1.png" id="2_hwicn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_frmmx"]
+radius = 5.0
+height = 16.0
+
+[node name="EnemyGeneral" type="CharacterBody2D" unique_id=554985607]
+script = ExtResource("1_73c5o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523410548]
+shape = SubResource("CapsuleShape2D_frmmx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1636208456]
+texture = ExtResource("2_hwicn")
+offset = Vector2(2, 0)
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)

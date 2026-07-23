@@ -39,7 +39,7 @@ metadata/_edit_use_anchors_ = true
 [node name="PlayButton" type="Button" parent="HBoxContainer" unique_id=1801750602]
 layout_mode = 2
 size_flags_horizontal = 3
-focus_neighbor_right = NodePath("../QuitButton")
+focus_neighbor_right = NodePath("../OptionsButton")
 theme_override_font_sizes/font_size = 117
 icon = ExtResource("3_anmaw")
 flat = true
@@ -49,6 +49,8 @@ expand_icon = true
 [node name="OptionsButton" type="Button" parent="HBoxContainer" unique_id=1964579475]
 layout_mode = 2
 size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../PlayButton")
+focus_neighbor_right = NodePath("../QuitButton")
 icon = ExtResource("4_lg1h6")
 flat = true
 icon_alignment = 1
@@ -57,7 +59,7 @@ expand_icon = true
 [node name="QuitButton" type="Button" parent="HBoxContainer" unique_id=1876185185]
 layout_mode = 2
 size_flags_horizontal = 3
-focus_neighbor_left = NodePath("../PlayButton")
+focus_neighbor_left = NodePath("../OptionsButton")
 theme_override_font_sizes/font_size = 117
 icon = ExtResource("4_ftsii")
 flat = true

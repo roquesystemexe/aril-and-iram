@@ -4,7 +4,7 @@ class_name PlayerMovement
 
 @export var gravity: float = 10.0;			# Base gravity
 @export var speed: float = 125.0;			# Base speed
-@export var jump_force: float = 135.0;		# Base jump force
+@export var jump_force: float = 135.0;		# Base jump force 135
 @export var dash_force: float = 300.0;		# Base dash force
 @export var dash_cooldown: int = 65;		# Base cooldown for dash 
 @export var double_jump: bool = false;		# Double Jump Checker
