@@ -269,7 +269,7 @@ texture = ExtResource("5_jj57x")
 physics_layer_0/collision_layer = 1
 sources/3 = SubResource("TileSetAtlasSource_7tsvb")
 
-[node name="TestLevel" type="Node2D" unique_id=893113129]
+[node name="TestLevel" type="Node2D" unique_id=893113129 groups=["Level"]]
 script = ExtResource("1_7e5cw")
 
 [node name="VisLayer0" type="Control" parent="." unique_id=1752024466]
@@ -304,12 +304,12 @@ tile_set = SubResource("TileSet_shgkq")
 texture_filter = 1
 position = Vector2(27, 242)
 
-[node name="player" parent="VisLayer1" unique_id=705346385 instance=ExtResource("3_o0omn")]
-position = Vector2(-653, 157)
-
 [node name="Amogus2" parent="VisLayer1" unique_id=1074480416 instance=ExtResource("8_1mv4x")]
 texture_filter = 1
 position = Vector2(1259, -142)
+
+[node name="player" parent="VisLayer1" unique_id=705346385 instance=ExtResource("3_o0omn")]
+position = Vector2(-653, 157)
 
 [node name="VisLayer2" type="Control" parent="." unique_id=395179506]
 layout_mode = 3
@@ -431,8 +431,6 @@ parameters/looping = true
 visible = false
 offset_right = 0.0
 offset_bottom = 0.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="DebugMonitor" parent="." unique_id=1065116645 instance=ExtResource("13_buhu8")]
 scale = Vector2(4, 4)

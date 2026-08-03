@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cvsroqu45iugt"]
+
+[ext_resource type="Texture2D" uid="uid://bv4t4qrvafres" path="res://Sprites/toothpick.png" id="1_er6cq"]
+[ext_resource type="Script" uid="uid://ity6twpwy4n8" path="res://Scripts/Weapons/weapon_manager.gd" id="1_qv81b"]
+[ext_resource type="Texture2D" uid="uid://bs3m4cxgm0tmp" path="res://Sprites/axe.png" id="3_e1ly8"]
+[ext_resource type="Texture2D" uid="uid://f3cie4mc44qe" path="res://Sprites/mace.png" id="4_l036s"]
+[ext_resource type="Texture2D" uid="uid://boubwohdturdc" path="res://Sprites/HitZone.png" id="5_7imee"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mql6x"]
+
+[node name="Weapon" type="Node2D" unique_id=273124045]
+script = ExtResource("1_qv81b")
+toothpick_texture = ExtResource("1_er6cq")
+axe_texture = ExtResource("3_e1ly8")
+mace_texture = ExtResource("4_l036s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=64136606]
+texture_filter = 1
+
+[node name="AttackTimer" type="Timer" parent="." unique_id=1408299157]
+one_shot = true
+
+[node name="CooldownTimer" type="Timer" parent="." unique_id=816663681]
+one_shot = true
+
+[node name="AttackPreview" type="Node2D" parent="." unique_id=1998518330]
+visible = false
+
+[node name="Pivot" type="Node2D" parent="AttackPreview" unique_id=1387109897]
+
+[node name="Sprite2D" type="Sprite2D" parent="AttackPreview/Pivot" unique_id=1426250475]
+texture_filter = 1
+position = Vector2(-2.3841858e-07, 2.3841858e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_7imee")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=914637125]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1324065113]
+shape = SubResource("RectangleShape2D_mql6x")
+
+[connection signal="timeout" from="CooldownTimer" to="." method="_on_cooldown_timer_timeout"]

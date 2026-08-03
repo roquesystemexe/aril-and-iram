@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c7c4b74uxc8s5" path="res://Scripts/Handlers/options.gd" id="1_m4ch3"]
 [ext_resource type="Texture2D" uid="uid://bho3r5025r4vw" path="res://Sprites/MainMenuButton.png" id="2_0yfcm"]
 [ext_resource type="Texture2D" uid="uid://ckjfj0v7ff2gi" path="res://Sprites/QuitButton.png" id="2_kdaex"]
+[ext_resource type="Texture2D" uid="uid://dy4tevbj857ug" path="res://Sprites/GoBackButton.png" id="3_3mkek"]
 
 [node name="Options" type="Control" unique_id=639871782]
 process_mode = 3
@@ -82,6 +83,15 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
+[node name="GoBackButton" type="Button" parent="HBoxContainer" unique_id=198822945]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+icon = ExtResource("3_3mkek")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
 [node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -95,4 +105,5 @@ expand_icon = true
 [connection signal="toggled" from="HBoxMusicToggle/MusicToggle" to="." method="_on_music_toggle_toggled"]
 [connection signal="value_changed" from="HBoxVolume/HSlider" to="." method="_on_volume_changed"]
 [connection signal="pressed" from="HBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/GoBackButton" to="." method="_on_go_back_button_pressed"]
 [connection signal="pressed" from="HBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

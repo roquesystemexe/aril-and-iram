@@ -38,6 +38,9 @@ window/stretch/mode="viewport"
 [global_group]
 
 pickups=""
+player=""
+enemies=""
+Level=""
 
 [input]
 

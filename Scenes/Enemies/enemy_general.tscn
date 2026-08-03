@@ -7,7 +7,10 @@
 radius = 5.0
 height = 16.0
 
-[node name="EnemyGeneral" type="CharacterBody2D" unique_id=554985607]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frmmx"]
+size = Vector2(10, 14)
+
+[node name="EnemyGeneral" type="CharacterBody2D" unique_id=554985607 groups=["enemies"]]
 script = ExtResource("1_73c5o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=523410548]
@@ -18,3 +21,8 @@ texture = ExtResource("2_hwicn")
 offset = Vector2(2, 0)
 region_enabled = true
 region_rect = Rect2(0, 0, 16, 16)
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1833491017]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1580748041]
+shape = SubResource("RectangleShape2D_frmmx")

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cflwjsunhopka" path="res://Scripts/Handlers/player_movement.gd" id="1_ghtyb"]
 [ext_resource type="Script" uid="uid://by8m8uanixh4w" path="res://Scripts/Handlers/player_animator.gd" id="2_gntrk"]
 [ext_resource type="Texture2D" uid="uid://mrtptn76g246" path="res://Sprites/player.png" id="2_kyqiw"]
+[ext_resource type="PackedScene" uid="uid://cvsroqu45iugt" path="res://Scenes/Weapons/weapon.tscn" id="4_dewec"]
 
 [sub_resource type="Animation" id="Animation_kyqiw"]
 length = 0.001
@@ -100,7 +101,7 @@ _data = {
 radius = 5.0
 height = 14.0
 
-[node name="player" type="CharacterBody2D" unique_id=705346385]
+[node name="player" type="CharacterBody2D" unique_id=705346385 groups=["player"]]
 collision_layer = 128
 slide_on_ceiling = false
 script = ExtResource("1_ghtyb")
@@ -129,3 +130,5 @@ physics_interpolation_mode = 1
 zoom = Vector2(4, 4)
 position_smoothing_speed = 10.0
 rotation_smoothing_speed = 10.0
+
+[node name="Weapon" parent="." unique_id=273124045 instance=ExtResource("4_dewec")]

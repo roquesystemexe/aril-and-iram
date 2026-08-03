@@ -1,6 +1,6 @@
 ## TO DO
 # BUGS TO FIX
-- Options UI not having A menu button AND a back button is a bad design, even tho you can still press ESC. It saying "Go back" is misleading.
+- None
 
 # Features
 - Add top-down
