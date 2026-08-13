@@ -15,6 +15,7 @@
 - Add inventory system?
 - Add puzzles (using inventory system?)
 - Add save system (Simple text file?)
+- ADVANCEMENTS!! (Dashes are for pussies)
 
 # Sprites
 - All:

@@ -144,6 +144,7 @@ texture = ExtResource("6_chkef")
 [node name="Song" type="AudioStreamPlayer" parent="Audio" unique_id=1847483640]
 process_mode = 3
 stream = ExtResource("8_4fgt5")
+volume_db = -23.0
 autoplay = true
 bus = &"Music"
 parameters/looping = true
