@@ -131,4 +131,4 @@ zoom = Vector2(4, 4)
 position_smoothing_speed = 10.0
 rotation_smoothing_speed = 10.0
 
-[node name="Weapon" parent="." unique_id=273124045 instance=ExtResource("4_dewec")]
+[node name="PlayerWeapon" parent="." unique_id=273124045 instance=ExtResource("4_dewec")]

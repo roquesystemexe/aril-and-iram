@@ -1,5 +1,7 @@
 extends Node
 
+enum GameMode {PLATFORMER, TOPDOWN, MINIGAME }
+
 var music_toggled: bool = true;
 var music_volume: float = 50.0;
 var respawn_point: Vector2

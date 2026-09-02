@@ -1,7 +1,7 @@
 extends Node2D
 class_name WeaponManager
 
-enum WeaponType { TOOTHPICK, AXE, MACE }
+enum WeaponType { NONE, TOOTHPICK, AXE, MACE }
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var hitbox: Area2D = $Hitbox

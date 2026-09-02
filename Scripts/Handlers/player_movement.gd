@@ -1,7 +1,7 @@
 extends CharacterBody2D
 class_name PlayerMovement
 
-
+@onready var weapon: WeaponManager = $PlayerWeapon
 @export var gravity: float = 10.0;			# Base gravity
 @export var speed: float = 125.0;			# Base speed
 @export var jump_force: float = 135.0;		# Base jump force 135
@@ -13,10 +13,18 @@ var dCooldown = 0;							# Dash Cooldown
 var input_handler := InputHandler.new();
 var direction = 1;
 
+
+var weapon_order := [
+	WeaponManager.WeaponType.NONE
+]
+
+var weapon_index := 0
+
 func _ready() -> void:
 	# Sync the player state with the GameManager when the level starts
 	double_jump = GameManager.dJump_enabled
 	dash = GameManager.dash_enabled
+	apply_weapon()
 
 func _physics_process(delta: float) -> void:
 	if velocity.x > 0:
@@ -55,3 +63,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide();
 	
 	input_handler.get_interact()
+
+func apply_weapon() -> void:
+	weapon.set_weapon_type(weapon_order[weapon_index])

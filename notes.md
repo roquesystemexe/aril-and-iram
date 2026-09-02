@@ -3,8 +3,12 @@
 - None
 
 # Features
-- Add top-down
-- Add enemies (NPCs)  << WORKING ON THIS
+- Add different modes  << WORKING ON THIS
+	> Top-down
+	
+	> Minigames
+
+- Add enemies (NPCs)
 	> Add raycasts
 	
 	> Add automatic movement logic
