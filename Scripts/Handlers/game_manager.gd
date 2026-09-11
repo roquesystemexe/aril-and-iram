@@ -12,6 +12,11 @@ var checkpoint_djump: bool = false;
 var checkpoint_dash: bool = false;
 var is_interacting: bool = false;
 var collected_items: Array[String] = []
+var curr_gamemode: GameMode
+var curr_weapon: WeaponManager.WeaponType
+
+func _ready() -> void:
+	set_gamemode(GameMode.PLATFORMER)
 
 func register_item(id: String):
 	if not collected_items.has(id):
@@ -19,3 +24,6 @@ func register_item(id: String):
 
 func is_item_collected(id: String) -> bool:
 	return collected_items.has(id)
+
+func set_gamemode(gamemode: GameMode):
+	curr_gamemode = gamemode

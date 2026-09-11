@@ -5,6 +5,7 @@ func _restart() -> bool:
 	if Input.is_action_just_pressed("restart"):
 		GameManager.has_checkpoint = false;
 		GameManager.dJump_enabled = false;
+		GameManager.dash_enabled = false;
 		return true;
 	else:
 		return false;
@@ -42,3 +43,26 @@ func get_interact() -> bool:
 	else:
 		GameManager.is_interacting = false;
 		return false;
+
+
+func get_weapon_selection() -> int:
+	if Input.is_action_just_pressed("number_1"):
+		return 1;
+	elif Input.is_action_just_pressed("number_2"):
+		return 2;
+	elif Input.is_action_just_pressed("number_3"):
+		return 3;
+	elif Input.is_action_just_pressed("number_4"):
+		return 4;
+	elif Input.is_action_just_pressed("number_5"):
+		return 5;
+	elif Input.is_action_just_pressed("number_6"):
+		return 6;
+	elif Input.is_action_just_pressed("number_7"):
+		return 7;
+	elif Input.is_action_just_pressed("number_8"):
+		return 8;
+	elif Input.is_action_just_pressed("number_9"):
+		return 9;
+	else:
+		return 0;

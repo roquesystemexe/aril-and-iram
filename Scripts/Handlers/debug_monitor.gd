@@ -22,6 +22,8 @@ func _process(_delta: float) -> void:
 			"Dash: " + str(GameManager.dash_enabled) + "\n" +
 			"CP Double Jump: " + str(GameManager.checkpoint_djump) + "\n" +
 			"CP Dash: " + str(GameManager.checkpoint_dash) + "\n" +
-			"Is Interacting: " + str(GameManager.is_interacting)
+			"Is Interacting: " + str(GameManager.is_interacting) + "\n" +
+			"GameMode: " + GameManager.GameMode.keys()[GameManager.curr_gamemode] + "\n" +
+			"Weapon: " + WeaponManager.WeaponType.keys()[GameManager.curr_weapon]
 		)
 		

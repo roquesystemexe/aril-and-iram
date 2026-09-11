@@ -12,6 +12,7 @@ enum WeaponType { NONE, TOOTHPICK, AXE, MACE }
 # 🔥 IMPORTANT: who is using this weapon (player or enemy)
 var attacker: CharacterBody2D
 
+@export var none_texture: Texture2D
 @export var toothpick_texture: Texture2D
 @export var axe_texture: Texture2D
 @export var mace_texture: Texture2D
@@ -84,6 +85,9 @@ func set_weapon_type(new_type: WeaponType):
 
 func update_weapon():
 	match weapon_type:
+		WeaponType.NONE:
+			sprite.texture = none_texture
+
 		WeaponType.TOOTHPICK:
 			sprite.texture = toothpick_texture
 

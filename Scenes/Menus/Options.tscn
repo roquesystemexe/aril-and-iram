@@ -76,7 +76,7 @@ theme_override_constants/separation = 28
 [node name="MainMenuButton" type="Button" parent="HBoxContainer" unique_id=365231952]
 layout_mode = 2
 size_flags_horizontal = 3
-focus_neighbor_right = NodePath("../ExitButton")
+focus_neighbor_right = NodePath("../GoBackButton")
 theme_override_font_sizes/font_size = 35
 icon = ExtResource("2_0yfcm")
 flat = true
@@ -87,6 +87,8 @@ expand_icon = true
 visible = false
 layout_mode = 2
 size_flags_horizontal = 3
+focus_neighbor_left = NodePath("../MainMenuButton")
+focus_neighbor_right = NodePath("../ExitButton")
 icon = ExtResource("3_3mkek")
 flat = true
 icon_alignment = 1
@@ -95,7 +97,7 @@ expand_icon = true
 [node name="ExitButton" type="Button" parent="HBoxContainer" unique_id=1511111426]
 layout_mode = 2
 size_flags_horizontal = 3
-focus_neighbor_left = NodePath("../MainMenuButton")
+focus_neighbor_left = NodePath("../GoBackButton")
 theme_override_font_sizes/font_size = 35
 icon = ExtResource("2_kdaex")
 flat = true

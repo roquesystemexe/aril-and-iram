@@ -14,7 +14,7 @@ func _is_in_level() -> bool:
 	return current_scene != null and current_scene.is_in_group("Level")
 
 func open_menu() -> void:
-	var current_scene := get_tree().current_scene
+#	var _current_scene := get_tree().current_scene
 
 	if _is_in_level():
 		get_tree().paused = true
