@@ -21,7 +21,7 @@ The game developed by:
 - Lira
 
 ## Lore
-Aril and Iram, two brother from the Oltsac village look through the basement gate, where their parents and grandparents perform a ritual using the Power Crystals.
+Aril and Iram, two brothers from the Oltsac village look through the basement gate, where their parents and grandparents perform a ritual using the Power Crystals.
 
 This ritual's objective is to, through a sacrifice, free the reign's capital city from a curse and end the resulting plague once and for all.
 
